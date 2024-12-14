@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors:{
         'green': '#166B68',
-        'greentua': '#124C59'
+        'greentua': '#124C59',
+        'greenhover': '#1C8985'
       },
 
       fontFamily:{

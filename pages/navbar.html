@@ -23,21 +23,35 @@
             <div class="mt-2 w-36 lg:w-44 h-auto flex justify-center ml-3">
                 <img src="../src/images/Logo.svg" alt="Logo Petify" class="w-full h-auto">
             </div>
+
             <!-- Feature -->
-            <ul class="text-green lg:flex gap-13 hidden">
-                <li class="cursor-pointer hover:text-greentua hover:underline transition duration-300 ease-in-out">Adoption</li>
-                <li class="cursor-pointer hover:text-greentua hover:underline  transition duration-300 ease-in-out">Article</li>
-                <!-- <li class="cursor-pointer text-greentua font-semibold underline underline-offset-4">Article</li> -->
-                <!-- <li class="cursor-pointer px-4 py-2 text-white font-semibold bg-green rounded-xl border border-greentua shadow-lg transform">Article</li> -->
-                <li class="cursor-pointer hover:text-greentua hover:underline transition duration-300 ease-in-out">Event</li>
-                <li class="cursor-pointer hover:text-greentua hover:underline transition duration-300 ease-in-out">Find Your Pet</li>
-                <li class="cursor-pointer hover:text-greentua hover:underline transition duration-300 ease-in-out">Life After Adoption</li>
+            <ul class="text-green lg:flex gap-13 hidden align-middle">
+                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out">Adoption</li>
+                <!-- <li class="cursor-pointer py-2 hover:text-greentua transition duration-300 ease-in-out">Article</li> -->
+                <li class="cursor-pointer p-2 font-semibold border-greentua text-greentua border rounded-3xl flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-200">
+                    <p class="text-center">Article</p>
+                    <img class="w-5 h-auto ml-2" src="../src/images/Vector.svg" alt="">
+                </li>         
+                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out">Event</li>
+                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out">Find Your Pet</li>
+                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out">Life After Adoption</li>
             </ul>
+
+            <!-- BEFORE LOGIN -->
             <!-- Login/signin -->
             <div class="lg:flex hidden gap-6">
                 <button class="px-4 py-4rem text-white bg-green rounded-xl border border-greentua shadow-lg transform hover:scale-95 hover:bg-greentua transition duration-300 ease-in-out">Login</button>
                 <button class="px-4 py-4rem text-white bg-green rounded-xl border border-greentua shadow-lg transform hover:scale-95 hover:bg-greentua transition duration-300 ease-in-out">Sign In</button>
             </div>
+
+            <!-- AFTER LOGIN -->
+            <!-- <div class="lg:flex hidden items-center justify-center space-x-3 font-semibold">
+                <p class="text-green text-center">Dodoidoy</p>
+                <div class="w-12 h-12 bg-white border-4 border-greentua rounded-full flex justify-center items-center">
+                    <img src="../src/images/after login.svg" alt="After Login logo">
+                </div>
+            </div> -->
+            
             <!-- hamburger icon -->
             <button class="buttonToogle lg:hidden block mr-4 hover:rotate-180 transition duration-500 ease-in-out">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,17 +59,20 @@
                 </svg>
             </button>
         </nav>
+
         <!-- phone -->
-        <div class="mobileMenu hidden font-overpass font-medium text-lg tracking-wide-9 text-center">
+        <div class="py-[2vw] mobileMenu hidden font-overpass font-medium text-lg tracking-wide-9 text-center">
             <ul class="text-green gap-4">
                 <li class="py-3 px-3 cursor-pointer hover:text-greentua hover:underline hover:font-semibold">Adoption</li>
                 <li class="py-3 px-3 cursor-pointer hover:text-greentua hover:underline hover:font-semibold">Article</li>
-                <!-- <li class="cursor-pointer text-greentua font-semibold underline underline-offset-4">Article</li> -->
+                <!-- <li class="cursor-pointer m-2 p-2 font-semibold border-greentua text-greentua border rounded-3xl flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-200">
+                    <p class="text-center pt-1">Article</p>
+                    <img class="w-5 h-auto ml-2" src="../src/images/Vector.svg" alt="">
+                </li>   -->
                 <li class="py-3 px-3 cursor-pointer hover:text-greentua hover:underline hover:font-semibold">Event</li>
                 <li class="py-3 px-3 cursor-pointer hover:text-greentua hover:underline hover:font-semibold">Find Your Pet</li>
             </ul>
             <div class="flex gap-6 mt-5 m-5">
-                
                 <button class="w-full px-4 py-4rem text-white bg-green rounded-xl border border-greentua shadow-lg hover:bg-greentua hover:scale-95 transition duration-300">Login</button>
                 <button class="w-full px-4 py-4rem text-white bg-green rounded-xl border border-greentua shadow-lg hover:bg-greentua hover:scale-95 transition duration-300">Sign In</button>
             </div>
