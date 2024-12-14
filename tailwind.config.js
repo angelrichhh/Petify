@@ -6,7 +6,10 @@ module.exports = {
       colors:{
         'green': '#166B68',
         'greentua': '#124C59',
-        'greenhover': '#1C8985'
+        'greenhover': '#1C8985',
+        'greentipis': '#588C7E',
+        'greenabout': '#D1D9C1',
+        'oren': '#D96459'
       },
 
       fontFamily:{
