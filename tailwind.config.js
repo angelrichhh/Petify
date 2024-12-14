@@ -11,7 +11,8 @@ module.exports = {
 
       fontFamily:{
         overpass:['Overpass'],
-        montserrat_alt:['Montserrat Alternates']
+        montserrat_alt:['Montserrat Alternates'],
+        open_sans: ['Open Sans']
       },
 
       gap:{
