@@ -6,20 +6,15 @@
     <title>Petify</title>
     <link href="../dist/css/output.css" rel="stylesheet">
     
-    <!-- Font Overpass & Montserrat Alternates -->
+    <!-- Font Overpass, Montserrat Alternates, & Open Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Katibeh&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Font Open Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <!-- Header -->
@@ -108,31 +103,7 @@
             </div>        -->
         </div>
     </header>
-
-    <script>
-        const buttonToogle = document.querySelector('.buttonToogle');
-        const mobileMenu = document.querySelector('.mobileMenu');
-    
-        buttonToogle.addEventListener('click', function () {
-            mobileMenu.classList.toggle('hidden');
-            
-            const icon = buttonToogle.querySelector('.icon');
-            
-            // Toggle antara hamburger dan X
-            if (icon.classList.contains('icon-hamburger')) {
-                // ganti path
-                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
-                icon.classList.remove('icon-hamburger');
-                icon.classList.add('icon-close');
-                icon.style.transform = 'rotate(90deg)'; // rotation effect
-            } else {
-                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
-                icon.classList.remove('icon-close');
-                icon.classList.add('icon-hamburger');
-                icon.style.transform = 'rotate(0deg)'; // Reset rotation
-            }
-        });
-    </script>  
+ 
     <!-- Join Us Section Start -->
     <div class="font-montserrat_alt text-center flex justify-between h-fit bg-white py-16 mb-0">
         <img src="../src/images/blob-join-us1.svg" alt="Blob Join Us" class="w-40 md:w-56 hidden md:block">
@@ -217,5 +188,30 @@
         </div>
     </footer>
     <!-- Footer End -->
+
+    <script>
+        const buttonToogle = document.querySelector('.buttonToogle');
+        const mobileMenu = document.querySelector('.mobileMenu');
+    
+        buttonToogle.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+            
+            const icon = buttonToogle.querySelector('.icon');
+            
+            // Toggle antara hamburger dan X
+            if (icon.classList.contains('icon-hamburger')) {
+                // ganti path
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+                icon.classList.remove('icon-hamburger');
+                icon.classList.add('icon-close');
+                icon.style.transform = 'rotate(90deg)'; // rotation effect
+            } else {
+                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+                icon.classList.remove('icon-close');
+                icon.classList.add('icon-hamburger');
+                icon.style.transform = 'rotate(0deg)'; // Reset rotation
+            }
+        });
+    </script> 
 </body>
 </html>
