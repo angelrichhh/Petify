@@ -21,31 +21,29 @@
     <header class="w-full bg-white shadow-xl">
         <nav class="px-5 flex justify-between items-center w-full font-overpass font-medium text-xl tracking-wide-9">
             <!-- LOGO -->
-            <div class="mt-2 w-36 lg:w-44 h-auto flex justify-center ml-3">
-                <img src="../src/images/Logo.svg" alt="Logo Petify" class="w-full h-auto">
+            <div class="mt-2 w-28 lg:w-32 h-auto flex justify-center ml-3">
+                <a href="./index.html">
+                    <img src="../src/images/Logo.svg" alt="Logo Petify" class="w-full h-auto">
+                </a>
             </div>
 
             <!-- Feature -->
             <ul class="text-green lg:flex gap-13 hidden align-middle text-center justify-center">
-                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out">Adoption</li>
-                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out">Article</li>
-
-                <!-- kalo lagi berada dihalaman article -->
-                <!-- <li class="cursor-pointer p-2 font-semibold border-greentua text-greentua border rounded-3xl flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-200">
-                    <p class="text-center">Article</p>
-                    <img class="w-5 h-auto ml-2" src="../src/images/Vector.svg" alt="">
-                </li>          -->
-
-                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out">Event</li>
-                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out">Find Your Pet</li>
-                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out">Life After Adoption</li>
+                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out"><a href="./adopt.html">Adoption</a></li>  
+                <li class="cursor-pointer p-2 font-semibold border-greentua text-greentua border rounded-3xl flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-200">
+                    <p class="text-center"><a href="./article.html">Article</a></p>
+                    <img class="w-7 h-auto ml-2" src="../src/images/Vector.svg" alt="">
+                </li>       
+                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out"><a href="./event.html">Event</a></li>
+                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out"><a href="./find-my-pet.html">Find Your Pet</a></li>
+                <li class="cursor-pointer p-2 hover:text-greentua hover:font-semibold transition duration-300 ease-in-out"><a href="./life-after-adoption.html">Life After Adoption</a></li>
             </ul>
 
             <!-- BEFORE LOGIN -->
             <!-- Login/signin -->
             <div class="lg:flex hidden gap-6">
-                <button class="px-4 py-4rem text-white bg-green rounded-2xl border border-greentua shadow-lg transform hover:scale-95 hover:bg-greentua transition duration-300 ease-in-out">Login</button>
-                <button class="px-4 py-4rem text-white bg-green rounded-2xl border border-greentua shadow-lg transform hover:scale-95 hover:bg-greentua transition duration-300 ease-in-out">Sign In</button>
+                <button class="px-4 py-4rem text-white bg-green rounded-2xl border border-greentua shadow-lg transform hover:scale-95 hover:bg-greentua transition duration-300 ease-in-out"><a href="./login.html">Login</a></button>
+                <button class="px-4 py-4rem text-white bg-green rounded-2xl border border-greentua shadow-lg transform hover:scale-95 hover:bg-greentua transition duration-300 ease-in-out"><a href="./register.html">Sign In</a></button>
             </div>
 
             <!-- AFTER LOGIN -->
@@ -67,17 +65,14 @@
         <!-- phone -->
         <div class="py-[2vw] mobileMenu hidden font-overpass font-medium text-lg tracking-wide-9 text-center">
             <ul class="text-green gap-4">
-                <li class="py-3 px-3 cursor-pointer hover:text-greentua hover:font-semibold">Adoption</li>
-                <li class="py-3 px-3 cursor-pointer hover:text-greentua hover:font-semibold">Article</li>
-
-                <!-- kalo lagi berada di halaman article -->
-                <!-- <li class="cursor-pointer m-7 p-2 font-semibold border-greentua text-greentua border rounded-3xl flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-200">
-                    <p class="text-center pt-1">Article</p>
-                    <img class="w-5 h-auto ml-2" src="../src/images/Vector.svg" alt="">
-                </li>   -->
-
-                <li class="py-3 px-3 cursor-pointer hover:text-greentua hover:font-semibold">Event</li>
-                <li class="py-3 px-3 cursor-pointer hover:text-greentua hover:font-semibold">Find Your Pet</li>
+                <li class="py-3 px-3 cursor-pointer hover:text-greentua hover:font-semibold"><a href="./adopt.html">Adoption</a></li>  
+                <li class="cursor-pointer m-7 p-2 font-semibold border-greentua text-greentua border rounded-3xl flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-200">
+                    <p class="text-center pt-1"><a href="./article.html">Article</a></p>
+                    <img class="w-7 h-auto ml-2" src="../src/images/Vector.svg" alt="">
+                </li>
+                <li class="py-3 px-3 cursor-pointer hover:text-greentua hover:font-semibold"><a href="./event.html">Event</a></li>
+                <li class="py-3 px-3 cursor-pointer hover:text-greentua hover:font-semibold"><a href="./find-my-pet.html">Find Your Pet</a></li>
+                <li class="py-3 px-3 cursor-pointer hover:text-greentua hover:font-semibold"><a href="./life-after-adoption.html">Life After Adoption</a></li>
             </ul>
 
             <!-- a line before button -->
@@ -85,8 +80,8 @@
 
             <!-- BEFORE LOGIN -->
             <div class="flex gap-6 mt-5 m-5">
-                <button class="w-full px-4 py-4rem text-white bg-green rounded-2xl border border-greentua shadow-lg hover:bg-greentua hover:scale-95 transition duration-300">Login</button>
-                <button class="w-full px-4 py-4rem text-white bg-green rounded-2xl border border-greentua shadow-lg hover:bg-greentua hover:scale-95 transition duration-300">Sign In</button>
+                <button class="w-full px-4 py-4rem text-white bg-green rounded-2xl border border-greentua shadow-lg hover:bg-greentua hover:scale-95 transition duration-300"><a href="./login.html">Login</a></button>
+                <button class="w-full px-4 py-4rem text-white bg-green rounded-2xl border border-greentua shadow-lg hover:bg-greentua hover:scale-95 transition duration-300"><a href="./register.html">Sign In</a></button>
             </div>
 
             <!-- AFTER LOGIN -->
@@ -119,26 +114,26 @@
                 </div>
     
                 <!-- Contact Us -->
-                <div class="w-full sm:w-1/3 mb-6 mr-32 sm:mb-0">
+                <div class="w-full sm:w-1/3 mb-6 sm:mb-0 sm:text-left">
                     <h2 class="font-semibold tracking-wider text-2xl mb-3">Contact Us</h2>
                     <p>Feel free to contact us!</p>
-                    <p class="my-4 flex items-center">
+                    <p class="my-4 flex sm:justify-start">
                         <i class="fa-solid fa-phone mr-4 text-xl" style="color: #ffffff;"></i>0852 - 6350 - 6419
                     </p>
-                    <p class="my-4 flex items-center">
+                    <p class="my-4 flex sm:justify-start">
                         <i class="fa-solid fa-envelope mr-4 text-xl" style="color: #ffffff;"></i>Dodoidoy@gmail.com
                     </p>
-                    <p class="flex items-center">
+                    <p class="flex sm:justify-start">
                         <i class="fa-solid fa-location-dot mr-4 text-xl" style="color: #ffffff;"></i>
                         Sentul City, Jl. Pakuan no 3, Sumur Batu, Babakan Madang, Bogor Regency, West Java 16810
                     </p>
                 </div>
     
                 <!-- Follow Us -->
-                <div class="w-full sm:w-1/3">
+                <div class="w-full sm:w-1/3 sm:text-right">
                     <h2 class="font-semibold tracking-wider text-2xl mb-3">Follow Us</h2>
                     <p class="mb-4">Let's connect on</p>
-                    <div class="flex space-x-4">
+                    <div class="flex sm:justify-end space-x-4">
                         <a href="https://www.instagram.com/pptibca.18?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                             <i class="fa-brands fa-instagram text-3xl" style="color: #ffffff;"></i>
                         </a>
@@ -161,7 +156,7 @@
             </span>
         </div>
     </footer>
-    <!-- Footer End -->    
+    <!-- Footer End -->
 
     <script>
         const buttonToogle = document.querySelector('.buttonToogle');
