@@ -1,6 +1,6 @@
-# **FINAL PROJECT: SOFTWARE ENGINEERING - BINUS UNIVERSITY**
+## **FINAL PROJECT: SOFTWARE ENGINEERING - BINUS UNIVERSITY**
 
-**Group 4 - Dodoidoy:**
+### **Group 4 - Dodoidoy:**
 
 - 2702363701 | Angel Rich
 - 2702363771 | Chelsea Leawana
