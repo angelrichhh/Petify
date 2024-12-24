@@ -9,7 +9,8 @@ module.exports = {
         'greenhover': '#1C8985',
         'greentipis': '#588C7E',
         'greenabout': '#D1D9C1',
-        'oren': '#D96459'
+        'oren': '#D96459',
+        'merah': '#CC2E1F'
       },
 
       fontFamily:{

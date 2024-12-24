@@ -15,6 +15,25 @@
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Untuk Carousel Feedback -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+        /* Override tombol navigasi */
+        .swiper-button-prev::after, .swiper-button-next::after {
+            display: none !important; 
+        }
+
+        /* Override pagination */
+        .swiper-pagination-bullet {
+            background-color: #588C7E !important; 
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #124C59 !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -110,6 +129,80 @@
     </div>
     <!-- Main Section End -->
 
+    <!-- Services Section Start -->
+    <div class="m-6 md:m-14">
+        <!-- Section Header -->
+        <div class="mb-10">
+            <h4 class="font-montserrat_alt font-bold text-3xl text-green mb-2">Our Services</h4>
+            <p class="font-open_sans text-greentua">Here are some of the services on this website</p>
+        </div>
+
+        <!-- Services Container -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mx-24">
+            <div>
+                <i class="fa-solid fa-paw fa-5x" style="color: #166b68;"></i>
+                <h4 class="font-montserrat_alt text-2xl font-semibold text-green my-4">Adopt your Pet!</h4>
+                <p class="font-open_sans tracking-wide w-3/4">Each animal will have a special profile that contains detailed information about the animal and allows users to initiate the adoption process by filling out an adoption application form.</p>
+                <!-- <p class="font-open_sans tracking-wide text-oren font-bold mt-4 mb-10 hover:text-merah hover:font-extrabold"><a href="../pages/adopt.html">See More</a></p> -->
+                <p class="font-open_sans tracking-wide text-oren font-bold mt-4 mb-10 relative">
+                    <a href="../pages/adopt.html" class="hover:text-merah before:absolute before:w-0 before:h-0.5 before:bg-merah before:bottom-0 before:left-0 before:transition-all before:duration-300 hover:before:w-1/5">
+                        See More
+                    </a>
+                </p>                                                                         
+            </div>
+
+            <div>
+                <i class="fa-solid fa-book fa-5x" style="color: #166b68;"></i>
+                <h4 class="font-montserrat_alt text-2xl font-semibold text-green my-4">Article</h4>
+                <p class="font-open_sans tracking-wide w-3/4">This education section provides articles about animal care, adoption tips, food, and other information related to animals.</p>
+                <!-- <p class="font-open_sans tracking-wide text-oren font-bold mt-4 mb-10 hover:text-merah hover:font-extrabold"><a href="../pages/adopt.html">See More</a></p> -->
+                <p class="font-open_sans tracking-wide text-oren font-bold mt-4 mb-10 relative">
+                    <a href="../pages/article.html" class="hover:text-merah before:absolute before:w-0 before:h-0.5 before:bg-merah before:bottom-0 before:left-0 before:transition-all before:duration-300 hover:before:w-1/5">
+                        See More
+                    </a>
+                </p>                
+            </div>
+
+            <div>
+                <i class="fa-solid fa-calendar-day fa-5x" style="color: #166b68;"></i>
+                <h4 class="font-montserrat_alt text-2xl font-semibold text-green my-4">Event</h4>
+                <p class="font-open_sans tracking-wide">A feature that showcases information about animal-related events, such as adoption campaigns, pet exhibitions, and community meetups, to raise awareness and foster interaction within the animal adoption community.</p>
+                <!-- <p class="font-open_sans tracking-wide text-oren font-bold mt-4 mb-10 hover:text-merah hover:font-extrabold"><a href="../pages/adopt.html">See More</a></p> -->
+                <p class="font-open_sans tracking-wide text-oren font-bold mt-4 mb-10 relative">
+                    <a href="../pages/event.html" class="hover:text-merah before:absolute before:w-0 before:h-0.5 before:bg-merah before:bottom-0 before:left-0 before:transition-all before:duration-300 hover:before:w-1/5">
+                        See More
+                    </a>
+                </p>                
+            </div>
+
+            <div>
+                <!-- <i class="fa-solid fa-dog fa-5x" style="color: #166b68;"></i> -->
+                <img src="../src/images/Find.svg" alt="Find My Pet">
+                <h4 class="font-montserrat_alt text-2xl font-semibold text-green my-4">Find your Pet!</h4>
+                <p class="font-open_sans tracking-wide w-3/4">Users can upload/post information about their missing pets, including the pet's characteristics (color, breed, last known location).</p>
+                <!-- <p class="font-open_sans tracking-wide text-oren font-bold mt-4 mb-10 hover:text-merah hover:font-extrabold"><a href="../pages/adopt.html">See More</a></p> -->
+                <p class="font-open_sans tracking-wide text-oren font-bold mt-4 mb-10 relative">
+                    <a href="../pages/find-my-pet.html" class="hover:text-merah before:absolute before:w-0 before:h-0.5 before:bg-merah before:bottom-0 before:left-0 before:transition-all before:duration-300 hover:before:w-1/5">
+                        See More
+                    </a>
+                </p>                
+            </div>
+
+            <div>
+                <i class="fa-brands fa-gratipay fa-5x" style="color: #166b68;"></i>
+                <h4 class="font-montserrat_alt text-2xl font-semibold text-green my-4">Life After Adoption</h4>
+                <p class="font-open_sans tracking-wide w-3/4">Users can create posts sharing the life journey of their pets after adoption.</p>
+                <!-- <p class="font-open_sans tracking-wide text-oren font-bold mt-4 mb-10 hover:text-merah hover:font-extrabold"><a href="../pages/adopt.html">See More</a></p> -->
+                <p class="font-open_sans tracking-wide text-oren font-bold mt-4 mb-10 relative">
+                    <a href="../pages/life-after-adoption.html" class="hover:text-merah before:absolute before:w-0 before:h-0.5 before:bg-merah before:bottom-0 before:left-0 before:transition-all before:duration-300 hover:before:w-1/5">
+                        See More
+                    </a>
+                </p>                
+            </div>
+        </div>
+    </div>
+    <!-- Services Section End -->
+    
     <!-- About Section Start -->
     <div class="rounded-3xl w-4/5 bg-greenabout mx-auto m-14 p-16 bg-no-repeat bg-center bg-cover" style="background-image: url(../src/images/about-bg.svg)">
         <h4 class="text-3xl text-green font-montserrat_alt text-center font-bold m-4 tracking-wide">What's Petify?</h4>
@@ -156,8 +249,63 @@
     </div>
     <!-- Our Partner Section End -->
 
+    <!-- Feedback Section Start -->
+    <div class="m-6 md:m-14">
+        <!-- Section Header -->
+        <div class="mb-10">
+            <h4 class="font-montserrat_alt font-bold text-3xl text-green mb-2">Feedback</h4>
+            <p class="font-open_sans text-greentua">Response from previous users</p>
+        </div>
+
+        <!-- Swiper Carousel -->
+        <div class="swiper default-carousel swiper-container">
+            <div class="swiper-wrapper mb-12">
+                <!-- Slide 1 -->
+                <div class="swiper-slide flex justify-items-center">
+                    <div class="rounded-3xl w-2/3 p-4 flex flex-col justify-center items-center bg-white h-fit">
+                        <img src="../src/images/alfheim.svg" alt="Feedback from Alfheim" class="m-6">
+                        <h4 class="font-montserrat_alt text-2xl font-semibold text-greentipis">Alfheim Elves</h4>
+                        <p class="font-open_sans text-center tracking-wide m-4">Petify ini merupakan website yang sangat membantu ya, ternyata. Saya jadi bisa mengetahui lebih banyak lagi mengenai hewan peliharaan saya. Saya juga jadi bisa menolong hewan peliharaan yang terlantar untuk mendapatkan tempat tinggal.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide flex justify-items-center">
+                    <div class="rounded-3xl w-2/3 p-4 flex flex-col justify-items items-center bg-white h-fit">
+                        <img src="../src/images/alfheim.svg" alt="Feedback from Alfheim" class="m-6">
+                        <h4 class="font-montserrat_alt text-2xl font-semibold text-greentipis">Gajah 18</h4>
+                        <p class="font-open_sans text-center tracking-wide m-4">Website yang sangat luar biasa. Saya merasa puas dengan informasi dan bantuan yang diberikan. Sangat direkomendasikan untuk semua pecinta hewan.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide flex justify-items-center">
+                    <div class="rounded-3xl w-2/3   p-4 flex flex-col justify-center items-center bg-white h-fit">
+                        <img src="../src/images/alfheim.svg" alt="Feedback from Alfheim" class="m-6">
+                        <h4 class="font-montserrat_alt text-2xl font-semibold text-greentipis">PPTI 18</h4>
+                        <p class="font-open_sans text-center tracking-wide m-4">Sangat membantu untuk menemukan tempat penampungan terbaik bagi hewan peliharaan saya. Timnya sangat ramah dan responsif.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button id="slider-button-left" class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-green !w-12 !h-12 transition-all duration-500 rounded-full !top-1/2 !-translate-y-1/2 !left-5 hover:bg-greentua" data-carousel-prev>
+                <svg class="h-5 w-5 text-greentua group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <button id="slider-button-right" class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-green !w-12 !h-12 transition-all duration-500 rounded-full !top-1/2 !-translate-y-1/2 !right-5 hover:bg-greentua" data-carousel-next>
+                <svg class="h-5 w-5 text-greentua group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- Feedback Section End -->
+
     <!-- Join Us Section Start -->
-    <div class="font-montserrat_alt text-center flex justify-between h-fit bg-white py-16 mb-0">
+    <div class="font-montserrat_alt text-center flex justify-between h-fit bg-white py-16 mt-0 mb-0">
         <img src="../src/images/blob-join-us1.svg" alt="Blob Join Us" class="w-40 md:w-56 hidden md:block">
         
         <div class="flex-col">
@@ -241,29 +389,44 @@
     </footer>
     <!-- Footer End -->
 
-    <script>
-        const buttonToogle = document.querySelector('.buttonToogle');
-        const mobileMenu = document.querySelector('.mobileMenu');
-    
-        buttonToogle.addEventListener('click', function () {
-            mobileMenu.classList.toggle('hidden');
-            
-            const icon = buttonToogle.querySelector('.icon');
-            
-            // Toggle antara hamburger dan X
-            if (icon.classList.contains('icon-hamburger')) {
-                // ganti path
-                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
-                icon.classList.remove('icon-hamburger');
-                icon.classList.add('icon-close');
-                icon.style.transform = 'rotate(90deg)'; // rotation effect
-            } else {
-                icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
-                icon.classList.remove('icon-close');
-                icon.classList.add('icon-hamburger');
-                icon.style.transform = 'rotate(0deg)'; // Reset rotation
-            }
-        });
-    </script> 
+<script>
+    // Script untuk toggle mobile menu
+    const buttonToogle = document.querySelector('.buttonToogle');
+    const mobileMenu = document.querySelector('.mobileMenu');
+
+    buttonToogle.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+
+        const icon = buttonToogle.querySelector('.icon');
+
+        // Toggle antara hamburger dan X
+        if (icon.classList.contains('icon-hamburger')) {
+            // ganti path
+            icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+            icon.classList.remove('icon-hamburger');
+            icon.classList.add('icon-close');
+            icon.style.transform = 'rotate(90deg)'; // rotation effect
+        } else {
+            icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+            icon.classList.remove('icon-close');
+            icon.classList.add('icon-hamburger');
+            icon.style.transform = 'rotate(0deg)'; // Reset rotation
+        }
+    });
+
+    // Script untuk inisialisasi Swiper.js
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+
 </body>
 </html>
