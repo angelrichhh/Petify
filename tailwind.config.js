@@ -10,7 +10,9 @@ module.exports = {
         'greentipis': '#588C7E',
         'greenabout': '#D1D9C1',
         'oren': '#D96459',
-        'merah': '#CC2E1F'
+        'merah': '#CC2E1F',
+        'kuning': '#F2D785',
+        'kuninggelap': '#E8C559'
       },
 
       fontFamily:{
@@ -26,9 +28,14 @@ module.exports = {
       letterSpacing:{
         'wide-9' :'9%'
       },
+
       spacing:{
         '13a':'13px',
         '4rem': '0.4rem'
+      },
+
+      borderRadius: {
+        '4xl': '3rem', 
       },
     },
   },

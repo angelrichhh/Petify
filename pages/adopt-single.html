@@ -15,6 +15,25 @@
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Untuk Carousel Gambar -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+        /* Override tombol navigasi */
+        .swiper-button-prev::after, .swiper-button-next::after {
+            display: none !important; 
+        }
+
+        /* Override pagination */
+        .swiper-pagination-bullet {
+            background-color: #588C7E !important; 
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #124C59 !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -99,6 +118,112 @@
         </div>
     </header>
 
+    <!-- Pet Picture Section Start -->
+    <div>
+        <!-- Swiper Carousel -->
+        <div class="swiper default-carousel swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="h-auto">
+                        <img src="../src/images/petpict.svg" alt="Pet Picture" class="w-full h-auto rounded-b-4xl">
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="h-auto">
+                        <img src="../src/images/petpict.svg" alt="Pet Picture" class="w-full h-auto rounded-b-4xl">
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="h-auto">
+                        <img src="../src/images/petpict.svg" alt="Pet Picture" class="w-full h-auto rounded-b-4xl">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button id="slider-button-left" class="swiper-button-prev group !p-2 flex justify-center items-center border border-solid border-white !w-12 !h-12 transition-all duration-500 rounded-full !top-1/2 !-translate-y-1/2 !left-5 hover:bg-white" data-carousel-prev>
+                <svg class="h-5 w-5 text-white group-hover:text-greentua" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M10.0002 11.9999L6 7.99971L10.0025 3.99719" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <button id="slider-button-right" class="swiper-button-next group !p-2 flex justify-center items-center border border-solid border-white !w-12 !h-12 transition-all duration-500 rounded-full !top-1/2 !-translate-y-1/2 !right-5 hover:bg-white" data-carousel-next>
+                <svg class="h-5 w-5 text-white group-hover:text-greentua" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M5.99984 4.00012L10 8.00029L5.99748 12.0028" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>     
+    <!-- Pet Picture Section End -->
+    
+    <!-- Pet Details Section Start -->
+    <div class="m-10">
+        <!-- Name & Details -->
+        <div>
+            <!-- Name & Like -->
+            <div>
+                <h1 class="font-bold text-black font-montserrat_alt text-6xl tracking-wide mb-4">Whiskey</h1>
+                <h4 class="font-semibold text-greentipis font-montserrat_alt text-3xl"><i class="fa-solid fa-location-dot fa-xs" style="color: #cc4b4b;"></i> Tangerang</h4>
+            </div>
+            
+            <!-- Details -->
+            <div class="mt-10 flex flex-row">
+                <div class="relative w-40 h-40 bg-kuning rounded-2xl shadow-lg mr-10">
+                    <!-- Lapisan bawah -->
+                    <div class="absolute top-2 left-2 w-full h-full bg-kuninggelap rounded-2xl -z-10"></div>
+                    <!-- Konten -->
+                    <div class="flex flex-col items-center justify-center h-full font-montserrat_alt font-semibold">
+                      <p class="text-oren text-xl mb-4">Vaccined</p>
+                      <p class="text-black text-2xl">Yes</p>
+                    </div>
+                </div>
+               
+                <div class="relative w-40 h-40 bg-kuning rounded-2xl shadow-lg mr-10">
+                    <!-- Lapisan bawah -->
+                    <div class="absolute top-2 left-2 w-full h-full bg-kuninggelap rounded-2xl -z-10"></div>
+                    <!-- Konten -->
+                    <div class="flex flex-col items-center justify-center h-full font-montserrat_alt font-semibold">
+                      <p class="text-oren text-xl mb-4">Age</p>
+                      <p class="text-black text-2xl">1 Year</p>
+                    </div>
+                </div>
+               
+                <div class="relative w-64 h-40 bg-kuning rounded-2xl shadow-lg mr-10">
+                    <!-- Lapisan bawah -->
+                    <div class="absolute top-2 left-2 w-full h-full bg-kuninggelap rounded-2xl -z-10"></div>
+                    <!-- Konten -->
+                    <div class="flex flex-col items-center justify-center h-full font-montserrat_alt font-semibold">
+                      <p class="text-oren text-xl mb-4">Breed</p>
+                      <p class="text-black text-2xl">Golden Retriever</p>
+                    </div>
+                </div>
+               
+                <div class="relative w-40 h-40 bg-kuning rounded-2xl shadow-lg mr-10">
+                    <!-- Lapisan bawah -->
+                    <div class="absolute top-2 left-2 w-full h-full bg-kuninggelap rounded-2xl -z-10"></div>
+                    <!-- Konten -->
+                    <div class="flex flex-col items-center justify-center h-full font-montserrat_alt font-semibold">
+                      <p class="text-oren text-xl mb-4">Gender</p>
+                      <p class="text-black text-2xl">Female</p>
+                    </div>
+                </div>
+               
+                <div class="relative w-40 h-40 bg-kuning rounded-2xl shadow-lg mr-10">
+                    <!-- Lapisan bawah -->
+                    <div class="absolute top-2 left-2 w-full h-full bg-kuninggelap rounded-2xl -z-10"></div>
+                    <!-- Konten -->
+                    <div class="flex flex-col items-center justify-center h-full font-montserrat_alt font-semibold">
+                      <p class="text-oren text-xl mb-4">Weight</p>
+                      <p class="text-black text-2xl">4 Kg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pet Details Section End -->
+     
     <!-- Footer Start -->
     <footer class="bg-greentua shadow font-montserrat_alt text-white text-sm mt-0">
         <div class="w-full max-w-screen-xl mx-auto py-8">
@@ -159,14 +284,15 @@
     <!-- Footer End -->
 
     <script>
+        // Script untuk toggle mobile menu
         const buttonToogle = document.querySelector('.buttonToogle');
         const mobileMenu = document.querySelector('.mobileMenu');
 
         buttonToogle.addEventListener('click', function () {
             mobileMenu.classList.toggle('hidden');
-            
+
             const icon = buttonToogle.querySelector('.icon');
-            
+
             // Toggle antara hamburger dan X
             if (icon.classList.contains('icon-hamburger')) {
                 // ganti path
@@ -181,6 +307,19 @@
                 icon.style.transform = 'rotate(0deg)'; // Reset rotation
             }
         });
-    </script>  
+
+        // Script untuk inisialisasi Swiper.js
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
