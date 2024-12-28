@@ -10,6 +10,7 @@ module.exports = {
         'greentipis': '#588C7E',
         'greenabout': '#D1D9C1',
         'oren': '#D96459',
+        'orenmuda': '#F2AE72',
         'merah': '#CC2E1F',
         'kuning': '#F2D785',
         'kuninggelap': '#E8C559'
@@ -36,6 +37,10 @@ module.exports = {
 
       borderRadius: {
         '4xl': '3rem', 
+      },
+
+      borderWidth: {
+        '1/2': '1.5px'
       },
     },
   },

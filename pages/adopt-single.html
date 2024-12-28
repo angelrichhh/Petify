@@ -33,6 +33,14 @@
         .swiper-pagination-bullet-active {
             background-color: #124C59 !important;
         }
+
+        /* Tambahkan gaya untuk ikon terisi dengan efek fill */
+        .filled-heart {
+        color: #8a2828; /* Warna merah yang diinginkan */
+        background: linear-gradient(transparent, #8a2828 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #8a2828;
+  }
     </style>
 </head>
 <body>
@@ -159,13 +167,21 @@
     <!-- Pet Picture Section End -->
     
     <!-- Pet Details Section Start -->
-    <div class="m-10">
+    <div class="m-16">
         <!-- Name & Details -->
         <div>
             <!-- Name & Like -->
-            <div>
-                <h1 class="font-bold text-black font-montserrat_alt text-6xl tracking-wide mb-4">Whiskey</h1>
-                <h4 class="font-semibold text-greentipis font-montserrat_alt text-3xl"><i class="fa-solid fa-location-dot fa-xs" style="color: #cc4b4b;"></i> Tangerang</h4>
+            <div class="flex flex-row">
+                <!-- Name -->
+                <div class="flex flex-col">
+                    <h1 class="font-bold text-black font-montserrat_alt text-6xl tracking-wide mb-4">Whiskey</h1>
+                    <h4 class="font-semibold text-greentipis font-montserrat_alt text-3xl"><i class="fa-solid fa-location-dot fa-xs" style="color: #cc4b4b;"></i> Tangerang</h4>
+                </div>
+
+                <!-- Like -->
+                <div class="mt-2 ml-5">
+                    <i class="fa-solid fa-heart fa-3x" id="likeIcon" style="color: #a6a6a6; cursor: pointer;"></i>
+                </div>
             </div>
             
             <!-- Details -->
@@ -221,6 +237,70 @@
                 </div>
             </div>
         </div>
+
+        <!-- Owner & Contact -->
+        <div class="mt-10 flex flex-row">
+            <!-- Owner -->
+            <div class="flex flex-col mr-36">
+                <h4 class="font-montserrat_alt font-semibold text-2xl">Owner</h4>
+                <hr class="border-black border-1/2 w-64">
+                <div class="flex flex-row mt-4">
+                    <div class="w-24 h-24 bg-white border-4 border-greentua rounded-full flex justify-center items-center">
+                        <img src="../src/images/after login.svg" alt="Dodoidoy Profile" class="w-20">
+                    </div>
+                    
+                    <div class="flex flex-col mt-4 ml-4">
+                        <p class="font-overpass font-semibold text-2xl">Dodoidoy</p>
+                        <p class="font-overpass font-semibold text-orenmuda text-xl mt-2"><i class="fa-solid fa-paw mr-2 bg-orenmuda rounded-full bg-opacity-25 border-orenmuda border-opacity-25 border-4" style="color: #f2ae72;"></i>1900</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="flex flex-col">
+                <h4 class="font-montserrat_alt font-semibold text-2xl">Contact</h4>
+                <hr class="border-black border-1/2 w-64">
+               
+                <div class="flex flex-col mt-8">
+                    <p class="font-overpass text-xl"><i class="fa-solid fa-envelope mr-4 text-xl" style="color: #166B68;"></i>Dodoidoy@gmail.com</p>
+                    <p class="font-overpass text-xl mt-2"><i class="fa-solid fa-phone mr-4 text-xl" style="color: #166B68;"></i>0852 - 6350 - 6419</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="mt-16">
+            <h4 class="font-montserrat_alt font-semibold text-2xl mb-2">Description</h4>
+            <hr class="border-black border-1/2 w-full">
+            <p class="font-open_sans text-lg mt-4">Whiskey is a very sweet and quiet chihuahua, an ideal dog for an introvert. She's also very friendly and can easily win the love of your neighbour.</p>
+            <p class="font-open_sans text-lg mt-4">The reason I want you to adopt Whiskey:</p>
+            <ul class="list-disc pl-5 mt-1 ml-5 font-open_sans text-lg">
+                <li>Sweet (She's a cinnamon roll)</li>
+                <li>Vaccinated</li>
+                <li>Protective but also Friendly</li>
+            </ul>                  
+        </div>
+
+        <!-- Requirement -->
+        <div class="mt-16">
+            <h4 class="font-montserrat_alt font-semibold text-2xl mb-2">Requirement Criteria</h4>
+            <hr class="border-black border-1/2 w-full">
+            <ul class="list-disc pl-5 mt-4 ml-5 font-open_sans text-lg">
+                <li>Love this dog sincerely</li>
+                <li>Willing to update status about this dog</li>
+                <li>Not to be eaten or used as a breeding stock for animals</li>
+            </ul>                  
+        </div>
+
+        <!-- Button Adopt Me (kalo belom diadopt)-->
+        <a href="../pages/adopt-form.html">
+            <button class="mt-10 text-white bg-greentipis rounded-2xl shadow-lg transform hover:scale-95 hover:bg-greentua transition duration-300 ease-in-out text-xl font-semibold px-5 py-2.5 font-overpass">Adopt Me</button>
+        </a>
+
+        <!-- Button Life After Adoption (kalo udah diadopt) -->
+        <!-- <a href="../pages/life-after-adoption.html">
+            <button class="mt-10 text-white bg-greentipis rounded-2xl shadow-lg transform hover:scale-95 hover:bg-greentua transition duration-300 ease-in-out text-xl font-semibold px-5 py-2.5 font-overpass">Life After Adoption</button>
+        </a> -->
     </div>
     <!-- Pet Details Section End -->
      
@@ -320,6 +400,20 @@
                 clickable: true,
             },
         });
+
+        // Script untuk Fitur Like
+        const likeIcon = document.getElementById('likeIcon');
+
+        // Tambahkan event listener saat diklik
+        likeIcon.addEventListener('click', function () {
+         if (!likeIcon.classList.contains('filled-heart')) {
+            // Tambahkan kelas untuk efek fill
+            likeIcon.classList.add('filled-heart');
+        } else {
+            // Hapus kelas jika sudah terisi
+            likeIcon.classList.remove('filled-heart');
+        }
+       });
     </script>
 </body>
 </html>
