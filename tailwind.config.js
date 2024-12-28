@@ -9,11 +9,13 @@ module.exports = {
         'greenhover': '#1C8985',
         'greentipis': '#588C7E',
         'greenabout': '#D1D9C1',
+        'greencat': '#C1E180',
         'oren': '#D96459',
         'orenmuda': '#F2AE72',
         'merah': '#CC2E1F',
         'kuning': '#F2D785',
-        'kuninggelap': '#E8C559'
+        'kuninggelap': '#E8C559',
+        'bluereptile': '#96BDF8'
       },
 
       fontFamily:{
@@ -40,7 +42,7 @@ module.exports = {
       },
 
       borderWidth: {
-        '1/2': '1.5px'
+        '1/2': '1px'
       },
     },
   },
