@@ -102,6 +102,121 @@
         </div>
     </header>
 
+    <!-- container -->
+    <div class="container mx-auto px-2 py-8">
+        <!-- judul -->
+        <header class="mb-6">
+            <h1 class="text-6xl font-bold text-green font-montserrat_alt">Event</h1>
+        </header>
+    
+    <!-- Search and Filter -->
+    <div class="flex flex-col justify-between mb-6">
+        <!-- Search Input -->
+        <form class="mt-4">
+            <label for="default-search" class="mb-2 text-sm text-gray-900 sr-only !font-overpass font-semibold">Search</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="search" id="default-search" class="block w-full p-4 ps-10 !font-overpass font-semibold text-slate-400 border-1/2 border-gray-400 rounded-lg bg-white shadow-md" placeholder="Search Here..." required>
+                <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-greentipis hover:bg-greentua rounded-lg px-2 py-2 !font-overpass">Search</button>
+            </div>
+        </form>
+        <div class="flex items-center w-3/4 space-x-4">
+            <div class="flex space-x-2">
+                <select class="border px-3 py-2 rounded-md shadow-sm focus:ring-2 focus:ring-green-500">
+                    <option>Pet Category</option>
+                </select>
+                <select class="border px-3 py-2 rounded-md shadow-sm focus:ring-2 focus:ring-green-500">
+                    <option>Time</option>
+                </select>
+                <select class="border px-3 py-2 rounded-md shadow-sm focus:ring-2 focus:ring-green-500">
+                    <option>Distance</option>
+                </select>
+            </div>
+        </div>
+        <!-- Button -->
+        <a href="/pages/event-form1.html" class="bg-orange-400 text-white px-4 py-2 rounded-md shadow-sm hover:bg-orange-500 inline-block text-center">
+            + Event Post
+        </a>
+    </div>
+    
+        <!-- Main Content -->
+        <div class="flex space-x-6">
+            <!-- Left Section (Event List) -->
+            <div class="w-2/3 space-y-4">
+                <!-- Event Card -->
+                <div class="flex items-start space-x-4 bg-gray-100 p-4 rounded-md shadow-sm">
+                    <img
+                        src="https://via.placeholder.com/100"
+                        alt="Event Image"
+                        class="w-24 h-24 rounded-md object-cover"
+                    />
+                    <div>
+                        <h2 class="text-lg font-bold">Sendawar Beauty Cat Show 2025</h2>
+                        <p class="text-sm text-gray-600">
+                            The contest was attended by 71 cats. Some of the categories competed were long tail,
+                            fashion show, health and adult to children’s breed cats and also domestic cats.
+                        </p>
+                        <div class="flex items-center space-x-2 text-sm text-gray-500 mt-2">
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i> Lamin Tonyoi, Sendawar Cultural Park,
+                                Barong Tongkok District, West Kutai Regency
+                            </span>
+                            <span>|</span>
+                            <span>
+                                <i class="fas fa-calendar"></i> 28 October 2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat Event Card as Needed -->
+            </div>
+    
+            <!-- Right Section (Calendar and Upcoming Events) -->
+            <div class="w-1/3 space-y-6">
+                <!-- Calendar -->
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                    <div class="flex justify-between items-center mb-4">
+                        <button>&lt;</button>
+                        <h3 class="text-lg font-semibold">January 2025</h3>
+                        <button>&gt;</button>
+                    </div>
+                    <div class="grid grid-cols-7 gap-2 text-center">
+                        <div>SUN</div>
+                        <div>MON</div>
+                        <div>TUE</div>
+                        <div>WED</div>
+                        <div>THU</div>
+                        <div>FRI</div>
+                        <div>SAT</div>
+                        <!-- Dates -->
+                        <!-- Add active dates dynamically -->
+                        <div class="col-span-7">...</div>
+                    </div>
+                </div>
+    
+                <!-- Upcoming Events -->
+                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+                    <h3 class="text-lg font-semibold mb-4">Upcoming Event</h3>
+                    <div class="flex items-start space-x-4">
+                        <img
+                            src="https://via.placeholder.com/60"
+                            alt="Upcoming Event"
+                            class="w-16 h-16 rounded-md object-cover"
+                        />
+                        <div>
+                            <h4 class="text-md font-bold">Perkin Jaya All Breed Dog Show 2025</h4>
+                            <p class="text-sm text-gray-600">Jeep Station Indonesia (JSI) Resort, Bogor</p>
+                            <p class="text-sm text-gray-500">16 - 18 January 2025</p>
+                        </div>
+                    </div>
+                    <!-- Repeat for other events -->
+                </div>
+            </div>
+        </div>
+    </div>    
+
     <!-- Footer Start -->
     <footer class="bg-greentua shadow font-montserrat_alt text-white text-sm mt-0">
         <div class="w-full max-w-screen-xl mx-auto py-8">
