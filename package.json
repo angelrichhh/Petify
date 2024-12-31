@@ -4,8 +4,10 @@
     "build": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css",
     "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch"
   },
-
   "devDependencies": {
     "tailwindcss": "^3.4.16"
+  },
+  "dependencies": {
+    "tailwind-scrollbar": "^3.1.0"
   }
 }
