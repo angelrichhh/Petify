@@ -103,86 +103,210 @@
     </header>
 
     <!-- container -->
-    <div class="container mx-auto px-2 py-8">
-        <!-- judul -->
-        <header class="mb-6">
-            <h1 class="text-6xl font-bold text-green font-montserrat_alt">Event</h1>
-        </header>
-    
-    <!-- Search and Filter -->
-    <div class="flex flex-col justify-between mb-6">
-        <!-- Search Input -->
-        <form class="mt-4">
-            <label for="default-search" class="mb-2 text-sm text-gray-900 sr-only !font-overpass font-semibold">Search</label>
-            <div class="relative">
-                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <input type="search" id="default-search" class="block w-full p-4 ps-10 !font-overpass font-semibold text-slate-400 border-1/2 border-gray-400 rounded-lg bg-white shadow-md" placeholder="Search Here..." required>
-                <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-greentipis hover:bg-greentua rounded-lg px-2 py-2 !font-overpass">Search</button>
-            </div>
-        </form>
-        <div class="flex items-center w-3/4 space-x-4">
-            <div class="flex space-x-2">
-                <select class="border px-3 py-2 rounded-md shadow-sm focus:ring-2 focus:ring-green-500">
-                    <option>Pet Category</option>
-                </select>
-                <select class="border px-3 py-2 rounded-md shadow-sm focus:ring-2 focus:ring-green-500">
-                    <option>Time</option>
-                </select>
-                <select class="border px-3 py-2 rounded-md shadow-sm focus:ring-2 focus:ring-green-500">
-                    <option>Distance</option>
-                </select>
-            </div>
-        </div>
-        <!-- Button -->
-        <a href="/pages/event-form1.html" class="bg-orange-400 text-white px-4 py-2 rounded-md shadow-sm hover:bg-orange-500 inline-block text-center">
-            + Event Post
-        </a>
-    </div>
-    
+    <div class="container mx-auto py-8 my-8">
         <!-- Main Content -->
-        <div class="flex space-x-6">
-            <!-- Left Section (Event List) -->
+        <div class="flex space-x-12">
+            <!-- Left Section (Judul, Search, Filter, and Event List) -->
             <div class="w-2/3 space-y-4">
-                <!-- Event Card -->
-                <div class="flex items-start space-x-4 bg-gray-100 p-4 rounded-md shadow-sm">
-                    <img
-                        src="https://via.placeholder.com/100"
-                        alt="Event Image"
-                        class="w-24 h-24 rounded-md object-cover"
-                    />
-                    <div>
-                        <h2 class="text-lg font-bold">Sendawar Beauty Cat Show 2025</h2>
-                        <p class="text-sm text-gray-600">
-                            The contest was attended by 71 cats. Some of the categories competed were long tail,
-                            fashion show, health and adult to children’s breed cats and also domestic cats.
-                        </p>
-                        <div class="flex items-center space-x-2 text-sm text-gray-500 mt-2">
-                            <span>
-                                <i class="fas fa-map-marker-alt"></i> Lamin Tonyoi, Sendawar Cultural Park,
-                                Barong Tongkok District, West Kutai Regency
-                            </span>
-                            <span>|</span>
-                            <span>
-                                <i class="fas fa-calendar"></i> 28 October 2024
-                            </span>
+                <!-- judul -->
+                <header class="mb-6">
+                    <h1 class="text-6xl font-bold text-green font-montserrat_alt">Event</h1>
+                </header>
+                <!-- Search and Filter -->
+                <div class="flex flex-col">
+                    <!-- search -->
+                    <form>
+                        <div class="relative mb-8">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <input
+                                type="search"
+                                id="default-search"
+                                class="block w-full p-4 ps-10 font-semibold text-black rounded-lg bg-abuevent"
+                                placeholder="Search Here..."
+                                required
+                            />
+                            <button
+                                type="submit"
+                                class=" text-white absolute end-2.5 bottom-2.5 bg-greentipis hover:bg-greentua rounded-lg px-2 py-2"
+                            >
+                                Search
+                            </button>
                         </div>
+                    </form>
+                    <!-- Filter Dropdowns -->
+                    <div class="flex items-center space-x-4 mb-8">
+                        <div class="flex items-center space-x-4" >
+                            <p class="text-xl font-open_sans font-semibold text-black tracking-widest">Filter By: </p>
+                            <select class="text-sm font-open_sans font-semibold tracking-wide text-black bg-abuevent px-3 py-1 rounded-lg focus:ring-1 focus:ring-black">
+                                <option>Pet Category</option>
+                            </select>
+                            <select class="text-sm font-open_sans font-semibold tracking-wide text-black bg-abuevent px-3 py-1 rounded-lg focus:ring-1 focus:ring-black">
+                                <option>Time</option>
+                            </select>
+                            <select class="text-sm font-open_sans font-semibold tracking-wide text-black bg-abuevent px-3 py-1 rounded-lg focus:ring-1 focus:ring-black">
+                                <option>Category</option>
+                            </select>
+                        </div>
+                        <!-- Button -->
+                        <a
+                            href="/pages/event-form1.html"
+                            class="bg-orenmuda text-white px-4 py-2 rounded-lg shadow-sm hover:bg-orange-400 inline-block text-center justify-end font-montserrat_alt tracking-wide text-base font-semibold ml-auto"
+                            style="margin-left: auto;"
+                        >
+                            + Event Post
+                        </a>
+                    </div>   
+                </div>
+    
+                <!-- Event Card -->
+                <div class="event card overflow-y-auto scrollbar-thin max-h-screen scrollbar-track-gray-200 scrollbar-thumb-gray-400">
+                    <a href="/pages/event-single.html">
+                        <div class="flex items-start space-x-6">
+                            <img
+                                src="/src/images/articlepict.svg"
+                                alt="Event Image"
+                                class="w-36 h-36 rounded-2xl object-cover"
+                            />
+                            <div>
+                                <h2 class="text-2xl font-semibold font-montserrat_alt text-black leading-snug">
+                                    Sendawar Beauty Cat Show 2025
+                                </h2>
+                                <p class="mt-2 text-sm font-open_sans leading-snug text-black font-normal">
+                                    The contest was attended by 71 cats. Some of the categories competed were long tail,
+                                    fashion show, health and adult to children’s breed cats and also domestic cats.
+                                </p>
+                                <div class="flex flex-col text-xs text-black font-open_sans font-semibold mt-3 leading-snug space-y-2">
+                                    <!-- Lokasi -->
+                                    <span class="flex items-center space-x-2">
+                                        <img src="/src/images/location event.svg" alt="Location Icon" class="w-4 h-4">
+                                        <span>
+                                            Lamin Tonyoi, Sendawar Cultural Park, Barong Tongkok District, West Kutai Regency
+                                        </span>
+                                    </span>
+                                    <!-- Tanggal -->
+                                    <span class="flex items-center space-x-2">
+                                        <img src="/src/images/uim_calendar.svg" alt="Calendar Icon" class="w-4 h-4">
+                                        <span>28 October 2024</span>
+                                    </span>
+                                </div>
+                            </div>                    
+                        </div>
+                    </a>
+                    <!-- Repeat Event Card -->
+                    <div class="event card">
+                        <a href="/pages/event-single.html">
+                            <div class="flex items-start space-x-6 my-14">
+                                <img
+                                    src="/src/images/articlepict.svg"
+                                    alt="Event Image"
+                                    class="w-36 h-36 rounded-2xl object-cover"
+                                />
+                                <div>
+                                    <h2 class="text-2xl font-semibold font-montserrat_alt text-black leading-snug">
+                                        Sendawar Beauty Cat Show 2025
+                                    </h2>
+                                    <p class="mt-2 text-sm font-open_sans leading-snug text-black font-normal">
+                                        The contest was attended by 71 cats. Some of the categories competed were long tail,
+                                        fashion show, health and adult to children’s breed cats and also domestic cats.
+                                    </p>
+                                    <div class="flex flex-col text-xs text-black font-open_sans font-semibold mt-3 leading-snug space-y-2">
+                                        <!-- Lokasi -->
+                                        <span class="flex items-center space-x-2">
+                                            <img src="/src/images/location event.svg" alt="Location Icon" class="w-4 h-4">
+                                            <span>
+                                                Lamin Tonyoi, Sendawar Cultural Park, Barong Tongkok District, West Kutai Regency
+                                            </span>
+                                        </span>
+                                        <!-- Tanggal -->
+                                        <span class="flex items-center space-x-2">
+                                            <img src="/src/images/uim_calendar.svg" alt="Calendar Icon" class="w-4 h-4">
+                                            <span>28 October 2024</span>
+                                        </span>
+                                    </div>
+                                </div>                    
+                            </div>   
+                        </a>
+                        
+                        <a href="/pages/event-single.html">
+                            <div class="flex items-start space-x-6 my-14">
+                                <img
+                                    src="/src/images/articlepict.svg"
+                                    alt="Event Image"
+                                    class="w-36 h-36 rounded-2xl object-cover"
+                                />
+                                <div>
+                                    <h2 class="text-2xl font-semibold font-montserrat_alt text-black leading-snug">
+                                        Sendawar Beauty Cat Show 2025
+                                    </h2>
+                                    <p class="mt-2 text-sm font-open_sans leading-snug text-black font-normal">
+                                        The contest was attended by 71 cats. Some of the categories competed were long tail,
+                                        fashion show, health and adult to children’s breed cats and also domestic cats.
+                                    </p>
+                                    <div class="flex flex-col text-xs text-black font-open_sans font-semibold mt-3 leading-snug space-y-2">
+                                        <!-- Lokasi -->
+                                        <span class="flex items-center space-x-2">
+                                            <img src="/src/images/location event.svg" alt="Location Icon" class="w-4 h-4">
+                                            <span>
+                                                Lamin Tonyoi, Sendawar Cultural Park, Barong Tongkok District, West Kutai Regency
+                                            </span>
+                                        </span>
+                                        <!-- Tanggal -->
+                                        <span class="flex items-center space-x-2">
+                                            <img src="/src/images/uim_calendar.svg" alt="Calendar Icon" class="w-4 h-4">
+                                            <span>28 October 2024</span>
+                                        </span>
+                                    </div>
+                                </div>                    
+                            </div>
+                        </a>
+                        <a href="/pages/event-single.html">
+                            <div class="flex items-start space-x-6 my-14">
+                                <img
+                                    src="/src/images/articlepict.svg"
+                                    alt="Event Image"
+                                    class="w-36 h-36 rounded-2xl object-cover"
+                                />
+                                <div>
+                                    <h2 class="text-2xl font-semibold font-montserrat_alt text-black leading-snug">
+                                        Sendawar Beauty Cat Show 2025
+                                    </h2>
+                                    <p class="mt-2 text-sm font-open_sans leading-snug text-black font-normal">
+                                        The contest was attended by 71 cats. Some of the categories competed were long tail,
+                                        fashion show, health and adult to children’s breed cats and also domestic cats.
+                                    </p>
+                                    <div class="flex flex-col text-xs text-black font-open_sans font-semibold mt-3 leading-snug space-y-2">
+                                        <!-- Lokasi -->
+                                        <span class="flex items-center space-x-2">
+                                            <img src="/src/images/location event.svg" alt="Location Icon" class="w-4 h-4">
+                                            <span>
+                                                Lamin Tonyoi, Sendawar Cultural Park, Barong Tongkok District, West Kutai Regency
+                                            </span>
+                                        </span>
+                                        <!-- Tanggal -->
+                                        <span class="flex items-center space-x-2">
+                                            <img src="/src/images/uim_calendar.svg" alt="Calendar Icon" class="w-4 h-4">
+                                            <span>28 October 2024</span>
+                                        </span>
+                                    </div>
+                                </div>                    
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <!-- Repeat Event Card as Needed -->
             </div>
     
             <!-- Right Section (Calendar and Upcoming Events) -->
-            <div class="w-1/3 space-y-6">
-                <!-- Calendar -->
-                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
+            <div class="space-y-6">
+                <div class="bg-abuevent p-12 rounded-xl">
+                    <!-- Calendar -->
                     <div class="flex justify-between items-center mb-4">
-                        <button>&lt;</button>
-                        <h3 class="text-lg font-semibold">January 2025</h3>
-                        <button>&gt;</button>
+                        <button id="prev" class="text-green hover:bg-gray-300 px-3 py-1 font-bold">&lt;</button>
+                        <h3 id="month-year" class="text-xl font-bold font-open_sans text-green">January 2025</h3>
+                        <button id="next" class="text-green hover:bg-gray-300 px-3 py-1 font-bold">&gt;</button>
                     </div>
-                    <div class="grid grid-cols-7 gap-2 text-center">
+                    <div class="grid grid-cols-7 gap-2 text-center font-open_sans text-black">
                         <div>SUN</div>
                         <div>MON</div>
                         <div>TUE</div>
@@ -190,32 +314,102 @@
                         <div>THU</div>
                         <div>FRI</div>
                         <div>SAT</div>
-                        <!-- Dates -->
-                        <!-- Add active dates dynamically -->
-                        <div class="col-span-7">...</div>
                     </div>
-                </div>
-    
-                <!-- Upcoming Events -->
-                <div class="bg-gray-100 p-4 rounded-md shadow-sm">
-                    <h3 class="text-lg font-semibold mb-4">Upcoming Event</h3>
-                    <div class="flex items-start space-x-4">
-                        <img
-                            src="https://via.placeholder.com/60"
-                            alt="Upcoming Event"
-                            class="w-16 h-16 rounded-md object-cover"
-                        />
-                        <div>
-                            <h4 class="text-md font-bold">Perkin Jaya All Breed Dog Show 2025</h4>
-                            <p class="text-sm text-gray-600">Jeep Station Indonesia (JSI) Resort, Bogor</p>
-                            <p class="text-sm text-gray-500">16 - 18 January 2025</p>
-                        </div>
+                    <div id="dates" class="grid grid-cols-7 gap-2 text-center mt-4 font-open_sans"></div>
+                    
+                    <!-- Upcoming Events -->
+                    <h3 class="text-xl font-bold font-open_sans leading-snug text-green mb-4 mt-16">Upcoming Event</h3>
+                    <div class="bg-white p-3 rounded-2xl">
+                        <a href="/pages/event-single.html">
+                            <div class="flex items-center space-x-4">
+                                <img
+                                    src="/src/images/petpict.svg"
+                                    alt="Upcoming Event"
+                                    class="w-24 h-24 rounded-2xl object-cover"
+                                />
+                                <div>
+                                    <h4 class="mb-2 text-lg font-semibold text-black font-montserrat_alt leading-snug">Perkin Jaya All Breed Dog Show 2025</h4>
+                                    <!-- location -->
+                                    <span class="mb-1 flex items-center space-x-2">
+                                        <img src="/src/images/location event.svg" alt="Location Icon" class="w-4 h-4">
+                                        <span class="text-xs font-open_sans leading-snug font-normal text-black">
+                                            Jeep Station Indonesia (JSI) Resort, Bogor
+                                        </span>
+                                    </span>
+                                    <!-- date -->
+                                    <span class="flex items-center space-x-2">
+                                        <img src="/src/images/uim_calendar.svg" alt="Location Icon" class="w-4 h-4">
+                                        <span class="text-xs font-open_sans leading-snug font-normal text-black">
+                                            16 - 18 January 2025
+                                        </span>
+                                    </span>                                
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <!-- Repeat for other events -->
+                    <a href="/pages/event-single.html">
+                        <div class="bg-white p-3 rounded-2xl mt-5">
+                            <div class="flex items-center space-x-4">
+                                <img
+                                    src="/src/images/petpict.svg"
+                                    alt="Upcoming Event"
+                                    class="w-24 h-24 rounded-2xl object-cover"
+                                />
+                                <div>
+                                    <h4 class="mb-2 text-lg font-semibold text-black font-montserrat_alt leading-snug">Perkin Jaya All Breed Dog Show 2025</h4>
+                                    <!-- location -->
+                                    <span class="mb-1 flex items-center space-x-2">
+                                        <img src="/src/images/location event.svg" alt="Location Icon" class="w-4 h-4">
+                                        <span class="text-xs font-open_sans leading-snug font-normal text-black">
+                                            Jeep Station Indonesia (JSI) Resort, Bogor
+                                        </span>
+                                    </span>
+                                    <!-- date -->
+                                    <span class="flex items-center space-x-2">
+                                        <img src="/src/images/uim_calendar.svg" alt="Location Icon" class="w-4 h-4">
+                                        <span class="text-xs font-open_sans leading-snug font-normal text-black">
+                                            16 - 18 January 2025
+                                        </span>
+                                    </span>                                
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/pages/event-single.html">
+                        <div class="bg-white p-3 rounded-2xl mt-5">
+                            <div class="flex items-center space-x-4">
+                                <img
+                                    src="/src/images/petpict.svg"
+                                    alt="Upcoming Event"
+                                    class="w-24 h-24 rounded-2xl object-cover"
+                                />
+                                <div>
+                                    <h4 class="mb-2 text-lg font-semibold text-black font-montserrat_alt leading-snug">Perkin Jaya All Breed Dog Show 2025</h4>
+                                    <!-- location -->
+                                    <span class="mb-1 flex items-center space-x-2">
+                                        <img src="/src/images/location event.svg" alt="Location Icon" class="w-4 h-4">
+                                        <span class="text-xs font-open_sans leading-snug font-normal text-black">
+                                            Jeep Station Indonesia (JSI) Resort, Bogor
+                                        </span>
+                                    </span>
+                                    <!-- date -->
+                                    <span class="flex items-center space-x-2">
+                                        <img src="/src/images/uim_calendar.svg" alt="Location Icon" class="w-4 h-4">
+                                        <span class="text-xs font-open_sans leading-snug font-normal text-black">
+                                            16 - 18 January 2025
+                                        </span>
+                                    </span>                                
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+
+    
 
     <!-- Footer Start -->
     <footer class="bg-greentua shadow font-montserrat_alt text-white text-sm mt-0">
@@ -299,6 +493,100 @@
                 icon.style.transform = 'rotate(0deg)'; // Reset rotation
             }
         });
+
+    const monthNames = [
+    "January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"
+    ];
+
+    const events = [
+        { date: "2025-01-16", title: "Perkin Jaya All Breed Dog Show 2025", location: "Jeep Station Indonesia (JSI) Resort, Bogor" },
+        { date: "2025-01-17", title: "Perkin Jaya All Breed Dog Show 2025", location: "Jeep Station Indonesia (JSI) Resort, Bogor" },
+        { date: "2025-01-28", title: "Perkin Jaya All Breed Dog Show 2025", location: "Jeep Station Indonesia (JSI) Resort, Bogor" }
+    ];
+
+    const today = new Date();
+    let currentMonth = today.getMonth();
+    let currentYear = today.getFullYear();
+
+    const monthYearElement = document.getElementById("month-year");
+    const datesElement = document.getElementById("dates");
+    const eventListElement = document.getElementById("event-list");
+
+    function renderCalendar(month, year) {
+        datesElement.innerHTML = ""; // Clear previous dates
+        const firstDay = new Date(year, month, 1).getDay(); // Day of the week
+        const daysInMonth = new Date(year, month + 1, 0).getDate(); // Days in the month
+
+        // Update month and year
+        monthYearElement.textContent = `${monthNames[month]} ${year}`;
+
+        // Add blank spaces for days before the first of the month
+        for (let i = 0; i < firstDay; i++) {
+            const blank = document.createElement("div");
+            datesElement.appendChild(blank);
+        }
+
+        // Add the days of the month
+        for (let day = 1; day <= daysInMonth; day++) {
+            const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+            const dayElement = document.createElement("div");
+            dayElement.textContent = day;
+            dayElement.className =
+            "p-2 rounded-2xl cursor-pointer hover:bg-gray-300";
+
+            // Highlight the current day
+            if (
+            day === today.getDate() &&
+            month === today.getMonth() &&
+            year === today.getFullYear()
+            ) {
+            dayElement.classList.add("bg-gray-200", "font-bold");
+            }
+
+            // Highlight days with events
+            const event = events.find(e => e.date === dateStr);
+            if (event) {
+            dayElement.classList.add("bg-blue-500", "text-white", "font-bold");
+            dayElement.addEventListener("click", () => showEvent(event));
+            }
+
+            datesElement.appendChild(dayElement);
+        }
+    }
+
+    function showEvent(event) {
+        eventListElement.innerHTML = `
+            <div class="p-4 bg-gray-50 rounded-md shadow">
+            <h4 class="font-semibold text-lg">${event.title}</h4>
+            <p class="text-sm text-gray-600">${event.location}</p>
+            <p class="text-sm text-gray-500">${event.date}</p>
+            </div>
+        `;
+    }
+
+    // Navigation buttons
+    document.getElementById("prev").addEventListener("click", () => {
+        currentMonth--;
+        if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear--;
+        }
+        renderCalendar(currentMonth, currentYear);
+        eventListElement.innerHTML = ""; // Clear event list
+    });
+
+    document.getElementById("next").addEventListener("click", () => {
+        currentMonth++;
+        if (currentMonth > 11) {
+            currentMonth = 0;
+            currentYear++;
+        }
+        renderCalendar(currentMonth, currentYear);
+        eventListElement.innerHTML = ""; // Clear event list
+    });
+
+    // Initial render
+    renderCalendar(currentMonth, currentYear);
     </script>  
 </body>
 </html>
