@@ -658,26 +658,6 @@ video {
   left: 0.5rem;
 }
 
-.left-\[102px\] {
-  left: 102px;
-}
-
-.left-\[123px\] {
-  left: 123px;
-}
-
-.left-\[18px\] {
-  left: 18px;
-}
-
-.left-\[387px\] {
-  left: 387px;
-}
-
-.left-\[6\.50px\] {
-  left: 6.50px;
-}
-
 .right-0 {
   right: 0px;
 }
@@ -690,8 +670,8 @@ video {
   inset-inline-start: 0px;
 }
 
-.top-0 {
-  top: 0px;
+.top-12 {
+  top: 3rem;
 }
 
 .top-2 {
@@ -704,22 +684,6 @@ video {
 
 .top-7 {
   top: 1.75rem;
-}
-
-.top-\[14px\] {
-  top: 14px;
-}
-
-.top-\[2px\] {
-  top: 2px;
-}
-
-.top-\[6\.50px\] {
-  top: 6.50px;
-}
-
-.top-\[8px\] {
-  top: 8px;
 }
 
 .-z-10 {
@@ -1049,14 +1013,6 @@ video {
   height: 2rem;
 }
 
-.h-\[26px\] {
-  height: 26px;
-}
-
-.h-\[39px\] {
-  height: 39px;
-}
-
 .h-auto {
   height: auto;
 }
@@ -1180,26 +1136,6 @@ video {
 
 .w-80 {
   width: 20rem;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-\[26px\] {
-  width: 26px;
-}
-
-.w-\[39px\] {
-  width: 39px;
-}
-
-.w-\[437px\] {
-  width: 437px;
-}
-
-.w-\[84px\] {
-  width: 84px;
 }
 
 .w-auto {
@@ -1446,10 +1382,6 @@ video {
 
 .rounded-3xl {
   border-radius: 1.5rem;
-}
-
-.rounded-\[15px\] {
-  border-radius: 15px;
 }
 
 .rounded-full {
@@ -2064,10 +1996,6 @@ video {
   letter-spacing: 0.1em;
 }
 
-.text-\[\#ababab\]\/80 {
-  color: rgb(171 171 171 / 0.8);
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
@@ -2163,14 +2091,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.placeholder-\[\#ababab\]\/80::-moz-placeholder {
-  color: rgb(171 171 171 / 0.8);
-}
-
-.placeholder-\[\#ababab\]\/80::placeholder {
-  color: rgb(171 171 171 / 0.8);
-}
-
 .placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity, 1));
@@ -2215,11 +2135,6 @@ video {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.outline-none {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 
 .backdrop-blur-md {
