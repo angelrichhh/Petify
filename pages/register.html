@@ -37,75 +37,85 @@
             </div>
         
             <!-- Bagian Kanan -->
-            <div class="flex-1 flex flex-col items-center justify-center">
-                <!-- Header -->
-                <div class="w-full text-center mb-8">
+            <div class="flex-1 flex flex-col items-center justify-center relative min-h-screen">
+                <!-- Header di Luar Form -->
+                <div class="absolute top-7 items-start text-center">
                     <h2 class="text-5xl font-bold font-montserrat_alt tracking-widest text-green mb-3">Sign Up</h2>
-                    <p class="text-black text-base font-normal font-open_sans tracking-wide">
+                    <p class=" text-black text-base font-normal font-open_sans tracking-wide text-center">
                         Join us and become a community of animal lovers!
                     </p>
                 </div>
 
                 <!-- Form Section -->
-                <div class="w-full">
-                    <form class="max-w-sm mx-auto font-open_sans font-semibold text-sm tracking-wide text-black">
+                <div class="w-full flex items-center justify-center">
+                    
+                    <form class="font-open_sans font-semibold text-base tracking-wide text-black">
                         <!-- Username -->
-                        <label for="username" class="block mb-2">Username</label>
-                        <div class="relative mb-4">
-                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                <img src="/src/images/username-icon.svg" alt="Username Icon" class="w-5 h-5">
+                        <div class="py-1 border border-black rounded-2xl flex items-center mb-8">
+                            <div class="w-20 text-black text-sm font-semibold pl-4">Username</div>
+                            <div class="text-black text-xl font-normal font-open_sans tracking-wide ml-3">|</div>
+                            <div class="flex-grow">
+                                <input type="text" id="username" class="w-full text-black text-base font-normal bg-transparent placeholder:text-gray-500 focus:outline-none pl-2" placeholder="Your Username">
                             </div>
-                            <input type="text" id="username"
-                                class="text-sm text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg block w-full pl-10 p-2.5"
-                                placeholder="Your Username">
+                            <div class="w-10 h-10 flex items-center justify-center mr-2">
+                                <img src="/src/images/login-profile.svg" alt="Username Icon" class="w-6 h-6">
+                            </div>
                         </div>
 
                         <!-- Email -->
-                        <label for="email" class="block mb-2">Email</label>
-                        <div class="relative mb-4">
-                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                <img src="/src/images/email-icon.svg" alt="Email Icon" class="w-5 h-5">
+                        <div class="py-1 border border-black rounded-2xl flex items-center mb-8">
+                            <div class="w-20 text-black text-sm font-semibold pl-4">Email</div>
+                            <div class="text-black text-xl font-normal font-open_sans tracking-wide ml-3">|</div>
+                            <div class="flex-grow">
+                                <input type="text" id="username" class="w-full text-black text-base font-normal bg-transparent placeholder:text-gray-500 focus:outline-none pl-2" placeholder="Your Email">
                             </div>
-                            <input type="email" id="email"
-                                class="text-sm text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg block w-full pl-10 p-2.5"
-                                placeholder="Your Email">
+                            <div class="w-10 h-10 flex items-center justify-center mr-2">
+                                <!-- Icon goes here -->
+                                <img src="/src/images/login-email.svg" alt="Username Icon" class="w-6 h-6">
+                            </div>
                         </div>
 
                         <!-- Phone Number -->
-                        <label for="phone" class="block mb-2">Phone Number</label>
-                        <div class="relative mb-4">
-                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                <img src="/src/images/phone-icon.svg" alt="Phone Icon" class="w-5 h-5">
+                        <div class="py-1 border border-black rounded-2xl flex items-center mb-8">
+                            <div class="w-20 text-black text-sm font-semibold pl-4">Phone Number</div>
+                            <div class="text-black text-xl font-normal font-open_sans tracking-wide ml-3">|</div>
+                            <div class="flex-grow">
+                                <input type="text" id="username" class="w-full text-black text-base font-normal bg-transparent placeholder:text-gray-500 focus:outline-none pl-2" placeholder="Your Phone Number">
                             </div>
-                            <input type="text" id="phone"
-                                class="text-sm text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg block w-full pl-10 p-2.5"
-                                placeholder="Your Phone Number">
+                            <div class="w-10 h-10 flex items-center justify-center mr-2">
+                                <!-- Icon goes here -->
+                                <img src="/src/images/login-phone.svg" alt="Username Icon" class="w-6 h-6">
+                            </div>
                         </div>
 
                         <!-- Address -->
-                        <label for="address" class="block mb-2">Address</label>
-                        <div class="relative mb-4">
-                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                <img src="/src/images/address-icon.svg" alt="Address Icon" class="w-5 h-5">
+                        <div class="py-1 border border-black rounded-2xl flex items-center mb-8">
+                            <div class="w-20 text-black text-sm font-semibold pl-4">Address</div>
+                            <div class="text-black text-xl font-normal font-open_sans tracking-wide ml-3">|</div>
+                            <div class="flex-grow">
+                                <input type="text" id="username" class="w-full text-black text-base font-normal bg-transparent placeholder:text-gray-500 focus:outline-none pl-2" placeholder="Your Address">
                             </div>
-                            <input type="text" id="address"
-                                class="text-sm text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg block w-full pl-10 p-2.5"
-                                placeholder="Your Address">
+                            <div class="w-10 h-10 flex items-center justify-center mr-2">
+                                <!-- Icon goes here -->
+                                <img src="/src/images/login-location.svg" alt="Username Icon" class="w-6 h-6">
+                            </div>
                         </div>
 
                         <!-- Password -->
-                        <label for="password" class="block mb-2">Password</label>
-                        <div class="relative mb-4">
-                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                <img src="/src/images/password-icon.svg" alt="Password Icon" class="w-5 h-5">
+                        <div class="py-1 border border-black rounded-2xl flex items-center mb-4">
+                            <div class="w-20 text-black text-sm font-semibold pl-4">Password</div>
+                            <div class="text-black text-xl font-normal font-open_sans tracking-wide ml-3">|</div>
+                            <div class="flex-grow">
+                                <input type="text" id="username" class="w-full text-black text-base font-normal bg-transparent placeholder:text-gray-500 focus:outline-none pl-2" placeholder="Your Password">
                             </div>
-                            <input type="password" id="password"
-                                class="text-sm text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg block w-full pl-10 p-2.5"
-                                placeholder="Your Password">
+                            <div class="w-10 h-10 flex items-center justify-center mr-2">
+                                <!-- Icon goes here -->
+                                <img src="/src/images/login-pass.svg" alt="Username Icon" class="w-6 h-6">
+                            </div>
                         </div>
 
-                        <!-- Confirm Password
-                        <label for="confirm-password" class="block mb-2">Confirm Password</label>
+                        <!-- Confirm Password -->
+                        <!-- <label for="confirm-password" class="block mb-2">Confirm Password</label>
                         <div class="relative mb-6">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                 <img src="/src/images/confirm-password-icon.svg" alt="Confirm Password Icon" class="w-5 h-5">
@@ -115,16 +125,50 @@
                                 placeholder="Confirm Your Password">
                         </div> -->
 
+                        <div class="flex space-x-8 text-sm font-normal font-open_sans leading-5">
+                            <!-- First column of rules -->
+                            <div class="flex flex-col">
+                                <!-- Min 8 char -->
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <img src="/src/images/login-acc.svg" alt="" class="w-5 h-5">
+                                    <p>Min. 8 Characters</p>
+                                </div>
+                                <!-- Uppercase -->
+                                <div class="flex items-center space-x-2">
+                                    <img src="/src/images/login-acc.svg" alt="" class="w-5 h-5">
+                                    <p>Uppercase</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Second column of rules -->
+                            <div class="flex flex-col ml-5 mb-14">
+                                <!-- Lowercase -->
+                                <div class="flex items-center space-x-2 mb-2 just">
+                                    <img src="/src/images/login-acc.svg" alt="" class="w-5 h-5">
+                                    <p>Lowercase</p>
+                                </div>
+                                <!-- Number -->
+                                <div class="flex items-center space-x-2">
+                                    <img src="/src/images/login-acc.svg" alt="" class="w-5 h-5">
+                                    <p>Number</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
                         <!-- Button -->
                         <div class="flex justify-center">
                             <button type="submit"
-                                    class=" bg-green text-xl font-semibold font-montserrat_alt tracking-wide text-white py-2 px-4 rounded-md hover:bg-greentua">
-                                Sign Up
+                                    class=" bg-green text-xl font-semibold font-montserrat_alt tracking-wide text-white py-2 px-4 rounded-xl hover:bg-greentua">
+                                <a href="/pages/index.html">
+                                    Sign Up
+                                </a>
                             </button>
                         </div>
                     </form>
                 </div>
             </div>
+
         </div>
     </div>
     
