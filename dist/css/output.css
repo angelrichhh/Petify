@@ -986,6 +986,10 @@ video {
   height: 2.5rem;
 }
 
+.h-11 {
+  height: 2.75rem;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -1069,6 +1073,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-11 {
+  width: 2.75rem;
 }
 
 .w-12 {
@@ -1375,6 +1383,10 @@ video {
 
 .justify-self-center {
   justify-self: center;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .overflow-hidden {
@@ -2437,6 +2449,11 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-green:hover {
+  --tw-text-opacity: 1;
+  color: rgb(22 107 104 / var(--tw-text-opacity, 1));
+}
+
 .hover\:text-greentua:hover {
   --tw-text-opacity: 1;
   color: rgb(18 76 89 / var(--tw-text-opacity, 1));
@@ -2655,6 +2672,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
   }
 
   .md\:justify-evenly {
