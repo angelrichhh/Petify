@@ -104,7 +104,7 @@
 
     <!-- COntainer Start -->
     <!-- Page Content Start  -->
-    <div class="flex h-screen overflow-hidden bg-no-repeat bg-center bg-contain" style="background-image: url(../src/images/adopt-bg.png)">
+    <div class="flex h-screen bg-no-repeat bg-center bg-contain" style="background-image: url(../src/images/adopt-bg.png)">
         <!-- Bagian Kiri (Sidebar) Start -->
         <div class="w-80 h-full shadow-lg pl-10 pt-10">
             <!-- Judul Page -->
@@ -133,7 +133,7 @@
                     </button>
                 </a>
     
-                <button id="Filter" class="ml-auto text-white bg-green rounded-2xl shadow-lg transform hover:scale-95 hover:bg-greentua transition duration-300 ease-in-out text-lg font-semibold px-2.5 py-2.5 font-overpass">
+                <button id="Filter" class="ml-auto text-white bg-green rounded-2xl shadow-lg transform hover:scale-95 hover:bg-greentua transition duration-300 ease-in-out text-lg font-semibold px-4 py-2.5 font-overpass">
                     <i class="fa-solid fa-sliders mr-2" style="color: #ffffff;"></i>Filter
                 </button>
             </div>
@@ -208,48 +208,110 @@
         </div>
         <!-- Bagian Kiri (Sidebar) End -->
         
-        <!-- Right Section Start -->
-        <div class="flex-1 p-10 overflow-auto">
-            <!-- Pet Listing Card -->
-            <div class="w-full mx-auto gap-6">
-                <!-- Pet Card Start -->
-                <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col md:flex-row items-start">
-                    <div class="flex flex-col items-center md:items-start">
-                        <img src="../src/images/find your pet photo dog.svg" alt="Missing Dog" class="object-cover rounded-lg">
+        <!-- bagian right section -->
+        <div class="flex pt-10 w-3/4">
+            <!-- Scrollable Pet Card Container -->
+            <div class="max-h-screen overflow-y-auto space-y-12 p-14 ml-auto">
+                <!-- pet card -->
+                <div class="bg-white shadow-lg rounded-xl p-8 relative">
+                    <!-- Share Button -->
+                    <div class="absolute top-4 right-6">
+                        <i class="fa-solid fa-share-nodes text-black cursor-pointer hover:text-green"></i>
                     </div>
-                    <div class="ml-4 mt-4 flex-1">
-                        <span class="bg-kuning text-white text-base font-semibold font-montserrat_alt px-3 py-2 rounded-2xl">Dog</span>
-                        <div class="text-black text-base font-semibold font-overpass tracking-wide gap-x-4 mt-4">
-                            <pre>Name          : Nersi</pre>
-                            <pre>Breed         : Golden Retriever</pre>
-                            <pre>Color         : Brown</pre>
-                            <pre>Last Seen     : Tangerang, Poris Indah</pre>
-                            <pre>Collar & Tag  : No</pre>
-                            <pre>Size          : Medium</pre>
-                            <pre>Date Lost     : 30 January 2025</pre>
+            
+                    <!-- Image & Details -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <!-- Pet Image -->
+                        <img src="../src/images/find your pet photo dog.svg" alt="Missing Dog" />
+                        
+                        <!-- Pet Details -->
+                        <div class="flex-1 pt-2">
+                            <span class="bg-kuning text-white text-base font-semibold font-montserrat_alt px-3.5 py-2 rounded-2xl">Dog</span>
+                            <div class="text-black text-base font-semibold font-overpass tracking-wide gap-x-4 mt-4">
+                                <pre>Name          : Nersi</pre>
+                                <pre>Breed         : Golden Retriever</pre>
+                                <pre>Color         : Brown</pre>
+                                <pre>Last Seen     : Tangerang, Poris Indah</pre>
+                                <pre>Collar & Tag  : No</pre>
+                                <pre>Size          : Medium</pre>
+                                <pre>Date Lost     : 30 January 2025</pre>
+                            </div>
                         </div>
-                        <p class="mt-4 font-normal font-overpass tracking-wide leading-snug text-sm text-center md:text-left max-w-md">
+                    </div>
+                    
+                    <!-- Description -->
+                    <div class="mt-3 font-overpass text-justify text-sm text-black tracking-wide leading-snug">
+                        <p>
                             If you see this dog, please let me know immediately. I love this dog so much and have been taking care of her since she was a puppy. She is not just a pet but a part of my family, and I am deeply worried about her safety. Your help in finding her would mean the world to me. Please contact me if you have any information. Thank you so much for your kindness and support!
                         </p>
-                        <div class="mt-4 flex items-center">
-                            <div class="w-11 h-11 bg-white border-2 border-greentua rounded-full flex justify-center items-center">
-                                <img src="../src/images/after login.svg" alt="After Login logo">
-                            </div>
-                            <p class="ml-3 text-green font-semibold font-overpass text-base tracking-wider">Dodoidoy</p>
+                    </div>
+                    
+                    <!-- Owner Info -->
+                    <div class=" mt-5 flex items-center">
+                        <!-- logo profile -->
+                        <div class="w-9 h-9 bg-white border-2 border-greentua rounded-full flex justify-center items-center">
+                            <img  class="w-7 h-7" src="../src/images/after login.svg" alt="Profile logo">
                         </div>
-                        <div class="mt-3 flex items-center text-black text-xs font-overpass">
-                            <i class="fa-solid fa-phone mr-2 text-green"></i>
+                        <p class="ml-3 text-green font-semibold font-overpass text-base tracking-wider">Dodoidoy</p>
+                        <!-- phone -->
+                        <div class="flex items-center text-black text-xs font-medium font-overpass ml-auto">
+                            <img class="mr-2" src="../src/images/telephone-minus-fill.svg" alt="Telephone Logo">
                             <span>0812 - 1234 - 5678</span>
                         </div>
-                        <div class="mt-2">
-                            <i class="fa-solid fa-share-nodes text-black cursor-pointer hover:text-green"></i>
+                    </div>
+                </div>           
+
+                <!-- Duplicate Pet Cards -->
+                <div class="bg-white shadow-lg rounded-xl p-8 relative">
+                    <!-- Share Button -->
+                    <div class="absolute top-4 right-6">
+                        <i class="fa-solid fa-share-nodes text-black cursor-pointer hover:text-green"></i>
+                    </div>
+            
+                    <!-- Image & Details -->
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <!-- Pet Image -->
+                        <img src="../src/images/find your pet photo dog.svg" alt="Missing Dog" />
+                        
+                        <!-- Pet Details -->
+                        <div class="flex-1 pt-12">
+                            <span class="bg-kuning text-white text-base font-semibold font-montserrat_alt px-3.5 py-2 rounded-2xl">Dog</span>
+                            <div class="text-black text-base font-semibold font-overpass tracking-wide gap-x-4 mt-4">
+                                <pre>Name          : Nersi</pre>
+                                <pre>Breed         : Golden Retriever</pre>
+                                <pre>Color         : Brown</pre>
+                                <pre>Last Seen     : Tangerang, Poris Indah</pre>
+                                <pre>Collar & Tag  : No</pre>
+                                <pre>Size          : Medium</pre>
+                                <pre>Date Lost     : 30 January 2025</pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Description -->
+                    <div class="mt-3 font-overpass text-justify text-sm text-black tracking-wide leading-snug">
+                        <p>
+                            If you see this dog, please let me know immediately. I love this dog so much and have been taking care of her since she was a puppy. She is not just a pet but a part of my family, and I am deeply worried about her safety. Your help in finding her would mean the world to me. Please contact me if you have any information. Thank you so much for your kindness and support!
+                        </p>
+                    </div>
+                    
+                    <!-- Owner Info -->
+                    <div class=" mt-5 flex items-center">
+                        <!-- logo profile -->
+                        <div class="w-9 h-9 bg-white border-2 border-greentua rounded-full flex justify-center items-center">
+                            <img  class="w-7 h-7" src="../src/images/after login.svg" alt="Profile logo">
+                        </div>
+                        <p class="ml-3 text-green font-semibold font-overpass text-base tracking-wider">Dodoidoy</p>
+                        <!-- phone -->
+                        <div class="flex items-center text-black text-xs font-medium font-overpass ml-auto">
+                            <img class="mr-2" src="../src/images/telephone-minus-fill.svg" alt="Telephone Logo">
+                            <span>0812 - 1234 - 5678</span>
                         </div>
                     </div>
                 </div>
-                <!-- Pet Card End -->
             </div>
-        </div>
-    <!-- Right Section End -->
+        </div>  
+        <!-- Right Section End -->
     </div>
     <!-- Container end -->
     
