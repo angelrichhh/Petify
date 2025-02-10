@@ -46,38 +46,79 @@
             </div>
     
             <!-- menu dashboard -->
-            <div class="mt-8 flex flex-col justify-center items-center text-center">
+            <div class="mt-8 flex flex-col  space-y-4 text-base font-bold font-overpass">
                 <!-- dashboard -->
-                <div class="">
-                    <img src="" alt="">
-                    <p>Dashboard</p>
+                <div class="flex flex-row items-center justify-items-start space-x-2">
+                    <img class="w-8 h-8" src="../src/images/dashboard.svg" alt="">
+                    <p class="text-green">Dashboard</p>
                 </div>
 
                 <!-- adoption history -->
-                <div>
-                    <img src="" alt="">
-                    <p>Adoption History</p>
+                <div class="flex flex-row items-center justify-items-start space-x-2">
+                    <img class="w-8 h-8" src="../src/images/adoption history dashboard.svg" alt="">
+                    <p class="text-green">Adoption History</p>
                 </div>
 
                 <!-- adoption request -->
-                <div>
-                    <img src="" alt="">
-                    <p>Adoption Request</p>
+                <div class="flex flex-row items-center justify-items-start space-x-2">
+                    <img class="w-9 h-9" src="../src/images/adoption request dashboard.svg" alt="">
+                    <p class="text-green">Adoption Request</p>
                 </div>
 
                 <!-- liked post -->
-                <div>
-                    <img src="" alt="">
-                    <p>Liked Post</p>
+                <div class="flex flex-row items-center justify-items-start space-x-2">
+                    <img class="w-8 h-8" src="../src/images/like.svg" alt="">
+                    <p class="text-green">Liked Post</p>
                 </div>
             </div>
     
             <!-- logout -->
             <div class="mt-8 flex justify-center items-center">
-                <p>Logout</p>
+                <img class="w-8 h-8" src="../src/images/logout.svg" alt="">
+                <p class="text-base font-bold font-overpass text-merah">Logout</p>
             </div>
         </div>
         <!-- Bagian Kiri (Sidebar) End -->
+
+        <!-- bagian kanan sidebar -->
+        <div class="flex-1 p-10">
+            <!-- Header -->
+            <div class="font-montserrat_alt tracking-wider">
+                <p class="text-green-700 font-bold text-4xl">Dashboard</p>
+                <div class="flex flex-col">
+                    <p class="text-black font-medium text-base">Wednesday,</p>
+                    <p class="text-black font-normal text-base">5 February 2025</p>
+                </div>
+            </div>
+    
+            <!-- Welcome Card -->
+            <div class="relative bg-kuning mt-6 rounded-lg flex items-center shadow-md">
+                <div>
+                    <p class="text-4xl font-bold text-black font-montserrat_alt tracking-wider">Hi, Dodoidoy!</p>
+                    <p class="text-black text-base font-semibold tracking-wide font-open_sans mt-4">Ready to make today a great day for animals? Let’s dive in!</p>
+                </div>
+                <img src="../src/images/dog-dashboard.png" alt="Cool Dog" class="ml-auto">
+            </div>
+    
+            <!-- Contribution Overview -->
+            <div class="mt-6">
+                <p class="text-green tracking-wide font-montserrat_alt text-2xl font-bold">Contribution Overview</p>
+                <div class="flex space-x-6 mt-3 text-xl font-bold font-overpass">
+                    <p class="text-black cursor-pointer">Adoption Post</p>
+                    <p class="text-black/30 cursor-pointer">Article Post</p>
+                    <p class="text-black/30 cursor-pointer">Event Post</p>
+                    <p class="text-black/30 cursor-pointer">Find My Pet Post</p>
+                    <!-- Search Bar -->
+                </div>
+            </div>
+            
+            <div class="mt-6 flex items-center bg-white shadow-md rounded-lg px-4 py-2 w-full text-black">
+                <svg class="w-6 h-6  text-base font-semibold font-open_sans tracking-wide justify-center text-center" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 4a6 6 0 100 12 6 6 0 000-12zM21 21l-4.35-4.35"></path>
+                </svg>
+                <input type="text" placeholder="Search here..." class="ml-2 border-none outline-none w-full">
+            </div>
+        </div>
     </div>
     
 </body>
