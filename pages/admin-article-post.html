@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin Article</title>
+    <link href="../dist/css/output.css" rel="stylesheet">
+        
+    <!-- Favicon Petify -->
+    <link rel="icon" href="../src/images/favicon.svg" type="image/svg">
+
+    <!-- Font Overpass, Montserrat Alternates, & Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Katibeh&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rakkas&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="flex h-screen overflow-hidden bg-no-repeat bg-center bg-contain bg-gray-50" style="background-image: url(../src/images/adopt-bg.png)">
+        <!-- Bagian Kiri (Sidebar) Start -->
+        <div class="bg-white w-[20vw] h-full shadow-lg p-[2vw] flex flex-col">
+            <!-- icon logo -->
+            <div class="flex justify-center items-center">
+                <a href="./index.html">
+                    <img class="w-[10vw]" src="../src/images/Logo.svg" alt="">
+                </a>
+            </div>
+    
+            <!-- profile -->
+            <div class="mt-[2vw] pt-[2vw] flex flex-col justify-center items-center">
+                <div class="w-[12vw] h-[12vw] bg-white border-[0.8vw] border-orenmuda rounded-full flex justify-center items-center">
+                    <img class="w-[9vw] h-[9vw]" src="../src/images/after login.svg" alt="After Login logo">
+                </div>
+                <p class="text-black font-semibold tracking-wider font-montserrat_alt text-[2vw] text-center mt-[1vw]">Dodoidoy</p>
+                <p class="text-center text-black/60 text-[1.5vw] font-bold font-overpass tracking-wide">Admin</p>
+            </div>
+    
+            <!-- menu dashboard -->
+            <div class="mt-[3vw] flex flex-col space-y-[1.5vw] text-[1.2vw] font-bold font-overpass text-center cursor-pointer w-full flex-grow">
+                <!-- Adoption Post Request -->
+                <a href="./admin-adoption-post.html">
+                    <div class="flex flex-row items-center space-x-[1vw] hover:font-extrabold hover:text-greentua transition duration-300 ease-in-out cursor-pointer">
+                        <i class="fa-solid fa-paw text-[2vw] text-green group-hover:text-greentua transition duration-300"></i>
+                        <p class="text-green transition duration-300">Adoption Post Request</p>
+                    </div>
+                </a>
+                
+                <!-- Article Post Request -->
+                <a href="./admin-article-post.html">
+                    <div class="flex flex-row items-center space-x-[1vw]">
+                        <i class="fa-solid fa-book text-[2vw] text-or-dashboard"></i>
+                        <p class="text-or-dashboard text-center">Article Post Request</p>
+                    </div>
+                </a>
+    
+                <!-- Event Post Request -->
+                <a href="./admin-event-post.html">
+                    <div class="flex flex-row items-center space-x-[1vw] hover:font-extrabold hover:text-greentua transition duration-300 ease-in-out cursor-pointer">
+                        <i class="fa-solid fa-calendar-day text-[2vw] text-green group-hover:text-greentua transition duration-300"></i>
+                        <p class="text-green transition duration-300">Event Post Request</p>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- logout -->
+            <div class="mt-auto flex justify-center items-center cursor-pointer space-x-[0.5vw] group">
+                <svg class="w-[2vw] h-[2vw] text-merah group-hover:text-red-800 transition duration-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M10 9V5L3 12l7 7v-4h4v-6h-4zM19 3h-7v2h7v14h-7v2h7a2 2 0 002-2V5a2 2 0 00-2-2z"/>
+                </svg>
+                <p class="text-[1.2vw] font-bold font-overpass text-merah group-hover:text-red-800 group-hover:font-extrabold transition duration-300">
+                    Logout
+                </p>
+            </div>
+        </div>
+        <!-- Bagian Kiri (Sidebar) End -->
+    
+        <!-- Sidebar Kanan Start -->
+        <div class="flex-1 p-[2vw]">
+            <!-- Header -->
+            <div class="font-montserrat_alt tracking-wider">
+                <p class="text-black font-normal text-[1.5vw]">Hello Dodoidoy,</p>
+                <p class="text-black font-semibold text-[2.5vw]">Good Afternoon!</p>
+            </div>
+    
+            <!-- Dashboard Summary -->
+            <div class="flex flex-row mt-[1.5vw] space-x-[2vw]">
+                <!-- Post Request -->
+                <div class="flex items-center bg-white px-[2vw] py-[1.5vw] rounded-tl-[1.5vw] rounded-tr-[1.5vw] w-[20vw]">
+                    <img src="../src/images/post request.svg" alt="">
+                    <div class="ml-[1vw]">
+                        <p class="text-black font-bold font-overpass text-[1.8vw]">1900</p>
+                        <p class="font-bold font-overpass text-gray-400 text-[1.1vw]">Total Post Request</p>
+                    </div>
+                </div>
+    
+                <!-- Approved Post -->
+                <div class="flex items-center bg-abuevent px-[2vw] py-[1.5vw] rounded-tl-[1.5vw] rounded-tr-[1.5vw] w-[20vw]">
+                    <img src="../src/images/approve.svg" alt="">
+                    <div class="ml-[1vw]">
+                        <p class="text-black font-bold font-overpass text-[1.8vw]">1900</p>
+                        <p class="font-bold font-overpass text-gray-400 text-[1.1vw]">Total Approved Post</p>
+                    </div>
+                </div>
+    
+                <!-- Rejected Post -->
+                <div class="flex items-center bg-abuevent px-[2vw] py-[1.5vw] rounded-tl-[1.5vw] rounded-tr-[1.5vw] w-[20vw]">
+                    <img src="../src/images/rejected.svg" alt="">
+                    <div class="ml-[1vw]">
+                        <p class="text-black font-bold font-overpass text-[1.8vw]">1900</p>
+                        <p class="font-bold font-overpass text-gray-400 text-[1.1vw]">Total Rejected Post</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="bg-white p-[2vw] rounded-lg shadow-lg">
+                <!-- Table Header -->
+                <div class="grid grid-cols-6 font-bold text-[1.2vw] border-b pb-[1vw] font-overpass text-gray-500">
+                    <p>ID</p>
+                    <p>Requested By</p>
+                    <p class="col-span-2 w-[28vw]">Article Name</p>
+                    <p>Article Category</p>
+                    <p>Action</p>
+                </div>
+
+                <!-- Table Rows -->
+                <div class="divide-y divide-gray-300">
+                    <!-- Row 1 -->
+                    <div class="grid grid-cols-6 py-[0.5vw] items-center text-[1.2vw] font-bold font-overpass text-black">
+                        <p>000001</p>
+                        <p>Elvinson</p>
+                        <p class="col-span-2 w-[20vw]">What to prepare for adopting a dog?</p>
+                        <span class="bg-kuning text-white text-[1vw] font-semibold font-montserrat_alt px-[1vw] py-[0.5vw] rounded-xl w-fit text-center">
+                            About Dog
+                        </span>
+                        <div class="flex space-x-[0.5vw]">
+                            <button class="bg-blue-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                <i class="fa-solid fa-eye text-blue-500 text-[1.2vw]"></i>
+                            </button>
+                            <button class="bg-greenabout p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                <i class="fa-solid fa-check text-greentipis text-[1.2vw]"></i>
+                            </button>
+                            <button class="bg-red-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                <i class="fa-solid fa-xmark text-red-600 text-[1.2vw]"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="divide-y divide-gray-300">
+                        <!-- Row 2 -->
+                        <div class="grid grid-cols-6 py-[0.5vw] items-center text-[1.2vw] font-bold font-overpass text-black">
+                            <p>000001</p>
+                            <p>Elvinson</p>
+                            <p class="col-span-2 w-[20vw]">What to prepare for adopting a dog? What to prepare for adopting a dog?</p>
+                            <span class="bg-kuning text-white text-[1vw] font-semibold font-montserrat_alt px-[1vw] py-[0.5vw] rounded-xl w-fit text-center">
+                                About Dog
+                            </span>
+                            <div class="flex space-x-[0.5vw]">
+                                <button class="bg-blue-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-eye text-blue-500 text-[1.2vw]"></i>
+                                </button>
+                                <button class="bg-greenabout p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-check text-greentipis text-[1.2vw]"></i>
+                                </button>
+                                <button class="bg-red-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-xmark text-red-600 text-[1.2vw]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divide-y divide-gray-300">
+                        <!-- Row 2 -->
+                        <div class="grid grid-cols-6 py-[0.5vw] items-center text-[1.2vw] font-bold font-overpass text-black">
+                            <p>000001</p>
+                            <p>Elvinson</p>
+                            <p class="col-span-2 w-[20vw]">What to prepare for adopting a dog? What to prepare for adopting a dog? What to prepare for adopting a dog?</p>
+                            <span class="bg-kuning text-white text-[1vw] font-semibold font-montserrat_alt px-[1vw] py-[0.5vw] rounded-xl w-fit text-center">
+                                About Dog
+                            </span>
+                            <div class="flex space-x-[0.5vw]">
+                                <button class="bg-blue-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-eye text-blue-500 text-[1.2vw]"></i>
+                                </button>
+                                <button class="bg-greenabout p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-check text-greentipis text-[1.2vw]"></i>
+                                </button>
+                                <button class="bg-red-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-xmark text-red-600 text-[1.2vw]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-7 py-[0.5vw] items-center text-[1.2vw] font-bold font-overpass text-black"></div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+</body>
+</html>

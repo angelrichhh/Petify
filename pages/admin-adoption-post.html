@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petify - Profile</title>
+    <title>Dashboard Admin Adoption</title>
     <link href="../dist/css/output.css" rel="stylesheet">
         
     <!-- Favicon Petify -->
@@ -20,102 +20,220 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="flex h-screen overflow-hidden bg-no-repeat bg-center bg-contain" style="background-image: url(../src/images/adopt-bg.png)">
+    <div class="flex h-screen overflow-hidden bg-no-repeat bg-center bg-contain bg-gray-50" style="background-image: url(../src/images/adopt-bg.png)">
         <!-- Bagian Kiri (Sidebar) Start -->
-        <div class="bg-white w-80 h-full shadow-lg p-8 flex flex-col">
+        <div class="bg-white w-[20vw] h-full shadow-lg p-[2vw] flex flex-col">
             <!-- icon logo -->
             <div class="flex justify-center items-center">
                 <a href="./index.html">
-                    <img class="w-32" src="../src/images/Logo.svg" alt="">
+                    <img class="w-[10vw]" src="../src/images/Logo.svg" alt="">
                 </a>
             </div>
     
             <!-- profile -->
-            <div class="mt-5 pt-5 flex flex-col justify-center items-center">
-                <div class="w-36 h-36 bg-white border-8 border-orenmuda rounded-full flex justify-center items-center">
-                    <img class="w-28 h-28" src="../src/images/after login.svg" alt="After Login logo">
+            <div class="mt-[2vw] pt-[2vw] flex flex-col justify-center items-center">
+                <div class="w-[12vw] h-[12vw] bg-white border-[0.8vw] border-orenmuda rounded-full flex justify-center items-center">
+                    <img class="w-[9vw] h-[9vw]" src="../src/images/after login.svg" alt="After Login logo">
                 </div>
-                <p class="text-black font-semibold tracking-wider font-montserrat_alt text-4xl text-center mt-2">Dodoidoy</p>
-                <p class="text-center text-black/60 text-xl font-bold font-overpass tracking-wide">Admin</p>
+                <p class="text-black font-semibold tracking-wider font-montserrat_alt text-[2vw] text-center mt-[1vw]">Dodoidoy</p>
+                <p class="text-center text-black/60 text-[1.5vw] font-bold font-overpass tracking-wide">Admin</p>
             </div>
     
             <!-- menu dashboard -->
-            <div class="mt-8 flex flex-col space-y-5 text-lg  font-bold font-overpass text-center cursor-pointer w-full">
+            <div class="mt-[3vw] flex flex-col space-y-[1.5vw] text-[1.2vw] font-bold font-overpass text-center cursor-pointer w-full flex-grow">
                 <!-- Adoption Post Request -->
-                <div class="flex flex-row items-center space-x-4">
-                    <a href="./admin-adoption-post.html">
-                        <i class="fa-solid fa-paw text-3xl text-or-dashboard"></i>
+                <a href="./admin-adoption-post.html">
+                    <div class="flex flex-row items-center space-x-[1vw]">
+                        <i class="fa-solid fa-paw text-[2vw] text-or-dashboard"></i>
                         <p class="text-or-dashboard text-center">Adoption Post Request</p>
-                    </a>
-                </div>
-                
-
+                    </div>
+                </a>
+    
                 <!-- Article Post Request -->
-                <div class="flex flex-row items-center space-x-4 hover:font-extrabold hover:text-greentua transition duration-300 ease-in-out cursor-pointer">
-                    <a href="./admin-article-post.html">
-                        <i class="fa-solid fa-book text-3xl text-green  group-hover:text-greentua transition duration-300"></i>
+                <a href="./admin-article-post.html">
+                    <div class="flex flex-row items-center space-x-[1vw] hover:font-extrabold hover:text-greentua transition duration-300 ease-in-out cursor-pointer">
+                        <i class="fa-solid fa-book text-[2vw] text-green group-hover:text-greentua transition duration-300"></i>
                         <p class="text-green transition duration-300">Article Post Request</p>
-                    </a>
-                </div>
-
+                    </div>
+                </a>
+    
                 <!-- Event Post Request -->
-                <div class="flex flex-row items-center space-x-4 hover:font-extrabold  hover:text-greentua transition duration-300 ease-in-out cursor-pointer">
-                    <a href="./admin-event-post.html">
-                        <i class="fa-solid fa-calendar-day text-3xl text-green group-hover:text-greentua transition duration-300"></i>
-                        <p class="text-green transition duration-300">Event Post Request</p>    
-                    </a>
-                </div>
-
+                <a href="./admin-event-post.html">
+                    <div class="flex flex-row items-center space-x-[1vw] hover:font-extrabold hover:text-greentua transition duration-300 ease-in-out cursor-pointer">
+                        <i class="fa-solid fa-calendar-day text-[2vw] text-green group-hover:text-greentua transition duration-300"></i>
+                        <p class="text-green transition duration-300">Event Post Request</p>
+                    </div>
+                </a>
             </div>
-
+    
             <!-- logout -->
-            <div class="mt-8 flex justify-center items-center">
-                <img class="w-8 h-8" src="../src/images/logout.svg" alt="">
-                <p class="text-base font-bold font-overpass text-merah">Logout</p>
+            <div class="mt-auto flex justify-center items-center cursor-pointer space-x-[0.5vw] group">
+                <svg class="w-[2vw] h-[2vw] text-merah group-hover:text-red-800 transition duration-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M10 9V5L3 12l7 7v-4h4v-6h-4zM19 3h-7v2h7v14h-7v2h7a2 2 0 002-2V5a2 2 0 00-2-2z"/>
+                </svg>
+                <p class="text-[1.2vw] font-bold font-overpass text-merah group-hover:text-red-800 group-hover:font-extrabold transition duration-300">
+                    Logout
+                </p>
             </div>
         </div>
         <!-- Bagian Kiri (Sidebar) End -->
-
-        <!-- bagian kanan sidebar -->
-        <div class="flex-1 p-10">
+    
+        <!-- Sidebar Kanan Start -->
+        <div class="flex-1 p-[2vw]">
             <!-- Header -->
             <div class="font-montserrat_alt tracking-wider">
-                <p class="text-green-700 font-bold text-4xl">Dashboard</p>
-                <div class="flex flex-col">
-                    <p class="text-black font-medium text-base">Wednesday,</p>
-                    <p class="text-black font-normal text-base">5 February 2025</p>
-                </div>
+                <p class="text-black font-normal text-[1.5vw]">Hello Dodoidoy,</p>
+                <p class="text-black font-semibold text-[2.5vw]">Good Afternoon!</p>
             </div>
     
-            <!-- Welcome Card -->
-            <div class="relative bg-kuning mt-6 rounded-lg flex items-center shadow-md">
-                <div>
-                    <p class="text-4xl font-bold text-black font-montserrat_alt tracking-wider">Hi, Dodoidoy!</p>
-                    <p class="text-black text-base font-semibold tracking-wide font-open_sans mt-4">Ready to make today a great day for animals? Let’s dive in!</p>
+            <!-- Dashboard Summary -->
+            <div class="flex flex-row mt-[1.5vw] space-x-[2vw]">
+                <!-- Post Request -->
+                <div class="flex items-center bg-white px-[2vw] py-[1.5vw] rounded-tl-[1.5vw] rounded-tr-[1.5vw] w-[20vw]">
+                    <img src="../src/images/post request.svg" alt="">
+                    <div class="ml-[1vw]">
+                        <p class="text-black font-bold font-overpass text-[1.8vw]">1900</p>
+                        <p class="font-bold font-overpass text-gray-400 text-[1.1vw]">Total Post Request</p>
+                    </div>
                 </div>
-                <img src="../src/images/dog-dashboard.png" alt="Cool Dog" class="ml-auto">
-            </div>
     
-            <!-- Contribution Overview -->
-            <div class="mt-6">
-                <p class="text-green tracking-wide font-montserrat_alt text-2xl font-bold">Contribution Overview</p>
-                <div class="flex space-x-6 mt-3 text-xl font-bold font-overpass">
-                    <p class="text-black cursor-pointer">Adoption Post</p>
-                    <p class="text-black/30 cursor-pointer">Article Post</p>
-                    <p class="text-black/30 cursor-pointer">Event Post</p>
-                    <p class="text-black/30 cursor-pointer">Find My Pet Post</p>
-                    <!-- Search Bar -->
+                <!-- Approved Post -->
+                <div class="flex items-center bg-abuevent px-[2vw] py-[1.5vw] rounded-tl-[1.5vw] rounded-tr-[1.5vw] w-[20vw]">
+                    <img src="../src/images/approve.svg" alt="">
+                    <div class="ml-[1vw]">
+                        <p class="text-black font-bold font-overpass text-[1.8vw]">1900</p>
+                        <p class="font-bold font-overpass text-gray-400 text-[1.1vw]">Total Approved Post</p>
+                    </div>
+                </div>
+    
+                <!-- Rejected Post -->
+                <div class="flex items-center bg-abuevent px-[2vw] py-[1.5vw] rounded-tl-[1.5vw] rounded-tr-[1.5vw] w-[20vw]">
+                    <img src="../src/images/rejected.svg" alt="">
+                    <div class="ml-[1vw]">
+                        <p class="text-black font-bold font-overpass text-[1.8vw]">1900</p>
+                        <p class="font-bold font-overpass text-gray-400 text-[1.1vw]">Total Rejected Post</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="mt-6 flex items-center bg-white shadow-md rounded-lg px-4 py-2 w-full text-black">
-                <svg class="w-6 h-6  text-base font-semibold font-open_sans tracking-wide justify-center text-center" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 4a6 6 0 100 12 6 6 0 000-12zM21 21l-4.35-4.35"></path>
-                </svg>
-                <input type="text" placeholder="Search here..." class="ml-2 border-none outline-none w-full">
+
+            <!-- Table -->
+            <div class="bg-white p-[2vw] rounded-lg shadow-lg">
+                <!-- Table Header -->
+                <div class="grid grid-cols-7 font-bold text-[1.2vw] border-b pb-[1vw] font-overpass text-gray-500">
+                    <p>ID</p>
+                    <p>Requested By</p>
+                    <p>Pet Name</p>
+                    <p>Pet Category</p>
+                    <p>Age</p>
+                    <p>Vaccinated</p>
+                    <p>Action</p>
+                </div>
+
+                <!-- Table Rows -->
+                <div class="divide-y divide-gray-300">
+                    <!-- Row 1 -->
+                    <div class="grid grid-cols-7 py-[0.5vw] items-center text-[1.2vw] font-bold font-overpass text-black">
+                        <p>000001</p>
+                        <p>Elvinson</p>
+                        <p>Doggy</p>
+                        <span class="bg-kuning text-white text-[1vw] font-semibold font-montserrat_alt px-[1vw] py-[0.5vw] rounded-xl w-fit text-center">
+                            Dog
+                        </span>
+                        <p>2 Month</p>
+                        <p>Yes</p>
+                        <div class="flex space-x-[0.5vw]">
+                            <button class="bg-blue-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                <i class="fa-solid fa-eye text-blue-500 text-[1.2vw]"></i>
+                            </button>
+                            <button class="bg-greenabout p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                <i class="fa-solid fa-check text-greentipis text-[1.2vw]"></i>
+                            </button>
+                            <button class="bg-red-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                <i class="fa-solid fa-xmark text-red-600 text-[1.2vw]"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="divide-y divide-gray-300">
+                        <!-- Row 2 -->
+                        <div class="grid grid-cols-7 py-[0.5vw] items-center text-[1.2vw] font-bold font-overpass text-black">
+                            <p>000001</p>
+                            <p>Elvinson</p>
+                            <p>Doggy</p>
+                            <span class="bg-kuning text-white text-[1vw] font-semibold font-montserrat_alt px-[1vw] py-[0.5vw] rounded-xl w-fit text-center">
+                                Dog
+                            </span>
+                            <p>2 Month</p>
+                            <p>Yes</p>
+                            <div class="flex space-x-[0.5vw]">
+                                <button class="bg-blue-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-eye text-blue-500 text-[1.2vw]"></i>
+                                </button>
+                                <button class="bg-greenabout p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-check text-greentipis text-[1.2vw]"></i>
+                                </button>
+                                <button class="bg-red-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-xmark text-red-600 text-[1.2vw]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divide-y divide-gray-300">
+                        <!-- Row 3 -->
+                        <div class="grid grid-cols-7 py-[0.5vw] items-center text-[1.2vw] font-bold font-overpass text-black">
+                            <p>000001</p>
+                            <p>Elvinson</p>
+                            <p>Doggy</p>
+                            <span class="bg-kuning text-white text-[1vw] font-semibold font-montserrat_alt px-[1vw] py-[0.5vw] rounded-xl w-fit text-center">
+                                Dog
+                            </span>
+                            <p>2 Month</p>
+                            <p>Yes</p>
+                            <div class="flex space-x-[0.5vw]">
+                                <button class="bg-blue-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-eye text-blue-500 text-[1.2vw]"></i>
+                                </button>
+                                <button class="bg-greenabout p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-check text-greentipis text-[1.2vw]"></i>
+                                </button>
+                                <button class="bg-red-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-xmark text-red-600 text-[1.2vw]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divide-y divide-gray-300">
+                        <!-- Row 4 -->
+                        <div class="grid grid-cols-7 py-[0.5vw] items-center text-[1.2vw] font-bold font-overpass text-black">
+                            <p>000001</p>
+                            <p>Elvinson</p>
+                            <p>Doggy</p>
+                            <span class="bg-kuning text-white text-[1vw] font-semibold font-montserrat_alt px-[1vw] py-[0.5vw] rounded-xl w-fit text-center">
+                                Dog
+                            </span>
+                            <p>2 Month</p>
+                            <p>Yes</p>
+                            <div class="flex space-x-[0.5vw]">
+                                <button class="bg-blue-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-eye text-blue-500 text-[1.2vw]"></i>
+                                </button>
+                                <button class="bg-greenabout p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-check text-greentipis text-[1.2vw]"></i>
+                                </button>
+                                <button class="bg-red-200 p-[1vw] rounded-md flex items-center justify-center w-[2.5vw] h-[2.5vw]">
+                                    <i class="fa-solid fa-xmark text-red-600 text-[1.2vw]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-7 py-[0.5vw] items-center text-[1.2vw] font-bold font-overpass text-black"></div>
+                </div>
             </div>
         </div>
-    </div>
+    </div>    
     
 </body>
 </html>
