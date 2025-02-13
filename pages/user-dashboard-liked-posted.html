@@ -132,40 +132,70 @@
         <!-- bagian kanan sidebar -->
         <div class="flex-1 px-[2.8vw] bg-">
             <!-- Liked Post -->
-            <div class="mt-[1.6vw] items-center mb-[1.4vw]">
+            <div class="mt-[1.6vw] items-center mb-[1vw]">
                 <!-- title -->
-                <p class="text-green tracking-wide font-montserrat_alt text-[2vw] font-bold">Like Post</p>
+                <p class="text-green tracking-wide font-montserrat_alt text-[2vw] font-bold">Liked Post</p>
                 
                 <!-- content -->
-                <div class="flex mt-[1.5vw] text-[1.5vw] font-bold font-overpass w-full items-center justify-between">
-                    <!-- adoption post -->
-                    <a href="./user-dashboard-liked-posted.html">
-                        <p class="text-black cursor-pointer">Adoption Post</p>
-                    </a>
-                    
-                    <!-- page life after adoption post -->
-                    <a href="./user-dashboard-liked-posted-life-after-adoption.html">
-                        <p class="text-black/30 cursor-pointer relative text-[1.3vw] hover:text-black/40 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black/50 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Life After Adoption Post</p>
-                    </a>
+                <div class="flex text-[1.5vw] font-bold font-overpass w-full justify-between">
+                    <div class="flex text-[1.5vw] font-bold font-overpass w-full items-center space-x-[5vw]">
+                        <!-- adoption post -->
+                        <a href="./user-dashboard-liked-posted.html">
+                            <p class="text-black cursor-pointer">Adoption Post</p>
+                        </a>
+                        
+                        <!-- page life after adoption post -->
+                        <a href="./user-dashboard-liked-posted-life-after-adoption.html">
+                            <p class="text-black/30 cursor-pointer relative text-[1.3vw] hover:text-black/40 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black/50 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Life After Adoption Post</p>
+                        </a>
+                    </div>
 
                     <!-- Search Bar -->
-                    <div class="flex bg-white shadow-md rounded-[0.5vw] px-[1.1vw] py-[1.1vw] text-black text-[1vw] font-semibold font-open_sans tracking-wide w-[25vw] justify-end">
+                    <div class="ml-auto flex bg-white shadow-md rounded-[0.5vw] px-[1.1vw] py-[1.1vw] text-black text-[1vw] font-semibold font-open_sans tracking-wide w-[25vw]">
                         <svg class="w-[1.6vw] h-[1.6vw] justify-center text-center cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 4a6 6 0 100 12 6 6 0 000-12zM21 21l-4.35-4.35"></path>
                         </svg>
                         <input type="text" placeholder="Search here..." class="ml-[0.5vw] border-none outline-none w-full">
                     </div>
                 </div>
-            </div>            
+            </div>       
 
-            <!-- card -->
-            <div class="overflow-y-auto scrollbar-thin max-h-[80vh] mb-[3vw] pr-[0.5vw]">
-                <!-- card 1 -->
-                
-                </div>
-
-                
-                <!-- end of card -->
+            <!-- Pet Adopt Catalog -->
+            <div class="grid grid-cols-3 gap-6">
+                <!-- Catalog 1 -->
+                <a href="../pages/adopt-single.html">
+                    <div class="rounded-lg shadow-xl p-2 w-80">
+                        <!-- Gambar Pet -->
+                        <img src="../src/images/petadoptpic.svg" alt="Pet Picture" class="w-full h-fit">
+                        
+                        <!-- Category & Days -->
+                        <div class="flex flex-row font-montserrat_alt font-semibold w-full">
+                            <p class="w-fit rounded-xl bg-kuning text-xl text-center text-white my-4 py-1.5 px-2">Dog</p>     
+                            <p class="text-slate-400 my-4 ml-auto py-1.5 px-2">2 days ago</p>
+                        </div>
+    
+                        <!-- Name & Like -->
+                        <div class="flex flex-row font-montserrat_alt font-semibold w-full">
+                            <p class="text-2xl">Whiskey</p>    
+                            <!-- Like -->
+                            <div class="mt-1 ml-auto pr-3">
+                                <i class="fa-solid fa-heart fa-lg likeIcon" style="color: #a6a6a6; cursor: pointer;"></i>
+                            </div> 
+                        </div>
+    
+                        <!-- Desc Singkat -->
+                        <p class="font-open_sans text-slate-600 my-4 text-justify pr-2">Whiskey is a very sweet and quiet golden retriever, an ideal dog for an introvert. She's also very friendly and can easily win the love of your neighbour.</p>
+                        
+                        <!-- Profile -->
+                        <div class="flex flex-row">
+                            <div class="w-12 h-12 bg-white border-4 border-greentua rounded-full flex justify-center items-center">
+                                <img src="../src/images/after login.svg" alt="Profile Owner">
+                            </div>
+                            <p class="mx-3 mt-2 font-overpass font-semibold text-xl">Dodoidoy</p>
+                            <p class="mt-2 ml-auto px-2 font-montserrat_alt font-semibold"><i class="fa-solid fa-location-dot fa-xs" style="color: #cc4b4b;"></i> Tangerang</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         <!-- sidebar kanan end -->
