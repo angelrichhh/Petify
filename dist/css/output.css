@@ -2452,11 +2452,6 @@ video {
   letter-spacing: 0.1em;
 }
 
-.text-abuevent {
-  --tw-text-opacity: 1;
-  color: rgb(235 235 235 / var(--tw-text-opacity, 1));
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
