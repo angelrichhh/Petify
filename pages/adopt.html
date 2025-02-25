@@ -117,9 +117,9 @@
     </header>
     
     <!-- Page Content Start  -->
-    <div class="flex h-screen overflow-hidden bg-no-repeat bg-center bg-contain" style="background-image: url(../src/images/adopt-bg.png)">
+    <div id="sidebarLeft" class="flex h-screen overflow-hidden bg-no-repeat bg-center bg-contain" style="background-image: url(../src/images/adopt-bg.png)">
         <!-- Bagian Kiri (Sidebar) Start -->
-        <div class="w-80 h-full shadow-lg pl-10 pt-10">
+        <div id="sidebarLeft" class="w-80 h-full shadow-lg pl-10 pt-10">
             <!-- Greetings -->
             <div class="font-montserrat_alt">
                 <h4 class="text-lg">Hello Dodoidoy,</h4>
@@ -140,17 +140,72 @@
             
             <!-- Button Filter & Your Like -->
             <div class="flex flex-row">
-                <button class="mt-4 text-white bg-green rounded-2xl shadow-lg transform hover:scale-95 hover:bg-greentua transition duration-300 ease-in-out text-lg font-semibold px-2.5 py-2.5 font-overpass"><i class="fa-solid fa-sliders mr-2" style="color: #ffffff;"></i>Filter</button>
+                <!-- Filter Button -->
+                <button id="filterButton" class="mt-4 text-white bg-green rounded-2xl shadow-lg transform hover:scale-95 hover:bg-greentua transition duration-300 ease-in-out text-lg font-semibold px-2.5 py-2.5 font-overpass">
+                    <i class="fa-solid fa-sliders mr-2" style="color: #ffffff;"></i>Filter
+                </button>
+                
+                <!-- Like Button -->
                 <button class="mt-4 ml-4 text-white bg-oren rounded-2xl shadow-lg transform hover:scale-95 hover:bg-orange-800 transition duration-300 ease-in-out text-lg font-semibold px-3 py-2.5 font-overpass"><i class="fa-solid fa-heart mr-2" style="color: #ffffff;"></i>Your Like</button>
+                
+                <!-- Dropdown Filter -->
+                <div id="filterDropdown" class="absolute w-[16vw] mt-[3.3vw] bg-green text-white rounded-[1vw] shadow-lg opacity-0 scale-95 transition-all transform origin-top-left hidden font-overpass">
+                    <div class="p-[1vw] space-y-[1vw]">
+                        <!-- Weight Input -->
+                        <label class="block">
+                            <span class="text-[1vw] font-semibold">Weight (KG)</span>
+                            <div class="flex space-x-[0.5vw]">
+                                <input type="number" placeholder="Min" class="w-[6.5vw] p-[0.5vw] bg-teal-700 rounded-[0.4vw]" min="1">
+                                <input type="number" placeholder="Max" class="w-[6.5vw] p-[0.5vw] bg-teal-700 rounded-[0.4vw]" min="1">
+                            </div>
+                        </label>
+
+                        <!-- Age Input -->
+                        <label class="block">
+                            <span class="text-[1vw] font-semibold">Age (Year)</span>
+                            <div class="flex space-x-[0.5vw]">
+                                <input type="number" placeholder="Min Age" class="w-[6.5vw] p-[0.5vw] bg-teal-700 rounded-[0.4vw]" min="1">
+                                <input type="number" placeholder="Max Age" class="w-[6.5vw] p-[0.5vw] bg-teal-700 rounded-[0.4vw]" min="1">
+                            </div>
+                        </label>
+
+                        <!-- City Input -->
+                        <label class="block">
+                            <span class="text-[1vw] font-semibold">City</span>
+                            <input type="text" placeholder="Input city here" class="w-full p-[0.5vw] bg-teal-700 rounded-[0.4vw]">
+                        </label>
+
+                        <!-- Gender Select -->
+                        <label class="block">
+                            <span class="text-[1vw] font-semibold">Gender</span>
+                            <select class="w-full mt-[0.25vw] p-[0.5vw] bg-teal-700 rounded-[0.4vw]">
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Any</option>
+                            </select>
+                        </label>
+
+                        <!-- Vaccined Select -->
+                        <label class="block">
+                            <span class="text-base font-semibold">Vaccined</span>
+                            <select class="w-full mt-[0.25vw] p-[0.5vw] bg-teal-700 rounded-[0.4vw]">
+                                <option>Yes</option>
+                                <option>No</option>
+                                <option>Any</option>
+                            </select>
+                        </label>
+                        <button class="w-full py-[0.25vw] mt-[1vw] bg-white text-green text-[1.2vw] rounded-[0.5vw] font-semibold hover:bg-gray-200 hover:scale-105 transition-all duration-300 ease-in-out font-montserrat_alt">Apply</button>
+                    </div>
+                </div>
             </div>
             
             <!-- Button Adoption Post -->
             <a href="../pages/adopt-post.html">
-                <button class="mt-4 w-5/6 text-white bg-orenmuda rounded-2xl shadow-lg transform hover:scale-95 hover:bg-orange-400 transition duration-300 ease-in-out text-lg font-semibold px-3 py-2.5 font-overpass"><i class="fa-solid fa-plus mr-2" style="color: #ffffff;"></i>Adoption Post</button>
+                <button id="petCategoryContainer" class="mt-4 w-5/6 text-white bg-orenmuda rounded-2xl shadow-lg transform hover:scale-95 hover:bg-orange-400 transition duration-300 ease-in-out text-lg font-semibold px-3 py-2.5 font-overpass"><i class="fa-solid fa-plus mr-2" style="color: #ffffff;"></i>Adoption Post</button>
             </a>
             
             <!-- Container Pet Category -->
-            <div class="mt-4 w-5/6 shadow-2xl rounded-lg border-1/2 border-gray-400 p-4 font-montserrat_alt">
+            <div id="petCategoryContainer" class="mt-4 w-5/6 shadow-2xl rounded-lg border-1/2 border-gray-400 p-4 font-montserrat_alt">
                 <div class="pl-2">
                     <h4 class="text-xl font-bold">Pet Category</h4>
                     <hr class="border-black border-1/2 w-full my-2">
@@ -674,6 +729,50 @@
             }
            });
         });
-    </script>  
+    </script> 
+    
+    <script>
+        const filterButton = document.getElementById("filterButton");
+        const filterDropdown = document.getElementById("filterDropdown");
+        const petCategoryContainer = document.getElementById("petCategoryContainer");
+        const sidebarLeft = document.getElementById("sidebarLeft"); // Ambil sidebar kiri
+
+        filterButton.addEventListener("click", () => {
+            const isHidden = filterDropdown.classList.contains("hidden");
+
+            if (isHidden) {
+                // Menampilkan dropdown filter
+                filterDropdown.classList.remove("hidden");
+                filterDropdown.classList.add("opacity-100", "scale-100");
+
+                // Menambah margin bawah kategori agar turun
+                petCategoryContainer.classList.add("mt-[30vw]");
+
+                // Menambah tinggi sidebar agar tidak terpotong oleh footer
+                sidebarLeft.classList.add("h-auto");
+                sidebarLeft.style.minHeight = "calc(150vh + 200px)"; // Tinggi sidebar lebih panjang
+            } else {
+                // Menyembunyikan dropdown filter
+                filterDropdown.classList.add("hidden");
+                filterDropdown.classList.remove("opacity-100", "scale-100");
+
+                // Mengembalikan margin dan tinggi sidebar ke semula
+                petCategoryContainer.classList.remove("mt-[30vw]");
+
+                // Kembalikan tinggi sidebar agar kembali normal
+                sidebarLeft.style.minHeight = "100vh";
+            }
+        });
+
+        // Menutup dropdown jika klik di luar
+        document.addEventListener("click", (event) => {
+            if (!filterButton.contains(event.target) && !filterDropdown.contains(event.target)) {
+                filterDropdown.classList.add("hidden");
+                filterDropdown.classList.remove("opacity-100", "scale-100");
+                petCategoryContainer.classList.remove("mt-[30vw]");
+                sidebarLeft.style.minHeight = "100vh"; // Kembali ke tinggi normal
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1092,6 +1092,26 @@ video {
   margin-top: auto;
 }
 
+.mt-96 {
+  margin-top: 24rem;
+}
+
+.mt-\[100vw\] {
+  margin-top: 100vw;
+}
+
+.mt-\[56vw\] {
+  margin-top: 56vw;
+}
+
+.mt-\[32vw\] {
+  margin-top: 32vw;
+}
+
+.mt-\[30vw\] {
+  margin-top: 30vw;
+}
+
 .block {
   display: block;
 }
@@ -1424,6 +1444,10 @@ video {
 
 .w-\[32vw\] {
   width: 32vw;
+}
+
+.w-\[6\.5vw\] {
+  width: 6.5vw;
 }
 
 .max-w-2xl {
